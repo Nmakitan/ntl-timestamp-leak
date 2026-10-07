@@ -1,0 +1,1 @@
+d2017 random rf leaky: leaky acc=0.9875 leaked=0.9812 | leaky_plus8y acc=0.9320 leaked=0.8372 | leaky_zero acc=0.8669 leaked=0.6684 | fit 63s, warnings 0

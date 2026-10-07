@@ -1,0 +1,12 @@
+02:48:02 predicted 100,000 of 1,087,223 rows
+02:57:08 predicted 200,000 of 1,087,223 rows
+03:07:10 predicted 300,000 of 1,087,223 rows
+03:17:16 predicted 400,000 of 1,087,223 rows
+03:27:18 predicted 500,000 of 1,087,223 rows
+03:34:20 predicted 600,000 of 1,087,223 rows
+03:44:22 predicted 700,000 of 1,087,223 rows
+03:53:42 predicted 800,000 of 1,087,223 rows
+04:03:00 predicted 900,000 of 1,087,223 rows
+04:13:00 predicted 1,000,000 of 1,087,223 rows
+04:23:13 predicted 1,087,223 of 1,087,223 rows
+d2018 temporal knn leaky: leaky acc=0.9933 leaked=0.9921 | leaky_plus8y acc=0.8710 leaked=0.6226 | leaky_zero acc=0.8244 leaked=0.4817 | fit 3s, warnings 0

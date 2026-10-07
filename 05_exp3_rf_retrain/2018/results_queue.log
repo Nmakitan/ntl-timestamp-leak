@@ -1,0 +1,105 @@
+2026-10-01 23:27:36 queue started; waiting for exp1b run + report and train build
+2026-10-02 02:47:41 prerequisites done (exp1b finished; train arrays built and test-verified)
+2026-10-02 02:47:41 start exp2_prep
+2026-10-02 02:50:27 end exp2_prep rc=0 wall=165s peak_rss=5.593804GB
+2026-10-02 02:50:27 start exp2_temporal_most_frequent
+2026-10-02 02:50:30 end exp2_temporal_most_frequent rc=0 wall=3s peak_rss=0.506948GB
+2026-10-02 02:50:30 start exp2_temporal_stratified
+2026-10-02 02:50:33 end exp2_temporal_stratified rc=0 wall=3s peak_rss=0.507768GB
+2026-10-02 02:50:33 start exp2_temporal_tree
+2026-10-02 02:50:38 end exp2_temporal_tree rc=0 wall=4s peak_rss=0.596384GB
+2026-10-02 02:50:38 start exp2_random_most_frequent
+2026-10-02 02:50:41 end exp2_random_most_frequent rc=0 wall=3s peak_rss=0.50754GB
+2026-10-02 02:50:41 start exp2_random_stratified
+2026-10-02 02:50:43 end exp2_random_stratified rc=0 wall=3s peak_rss=0.507196GB
+2026-10-02 02:50:43 start exp2_random_tree
+2026-10-02 02:50:48 end exp2_random_tree rc=0 wall=5s peak_rss=0.596444GB
+summaries written
+2026-10-02 02:50:51 === tier1 ===
+2026-10-02 02:50:51 start exp3_temporal_leaky_s0
+2026-10-02 03:13:43 end exp3_temporal_leaky_s0 rc=0 wall=1372s peak_rss=6.171092GB
+summaries written
+2026-10-02 03:13:45 pipeline check OK: temporal_leaky_s0 accuracy 0.8919
+2026-10-02 03:13:45 start exp3_temporal_fixA_s0
+2026-10-02 03:35:26 end exp3_temporal_fixA_s0 rc=0 wall=1301s peak_rss=6.423444GB
+summaries written
+2026-10-02 03:35:29 start exp3_random_leaky_s0
+2026-10-02 04:00:42 end exp3_random_leaky_s0 rc=0 wall=1514s peak_rss=6.4339GB
+summaries written
+2026-10-02 04:00:45 start exp3_random_fixA_s0
+2026-10-02 04:26:00 end exp3_random_fixA_s0 rc=0 wall=1515s peak_rss=6.535744GB
+summaries written
+2026-10-02 04:26:03 tier1 complete
+2026-10-02 04:26:03 === tier2 ===
+2026-10-02 04:26:03 start exp3_temporal_leaky_s1
+2026-10-02 04:48:13 end exp3_temporal_leaky_s1 rc=0 wall=1330s peak_rss=6.516484GB
+summaries written
+2026-10-02 04:48:16 start exp3_temporal_fixA_s1
+2026-10-02 05:09:38 end exp3_temporal_fixA_s1 rc=0 wall=1283s peak_rss=6.520056GB
+summaries written
+2026-10-02 05:09:41 start exp3_random_leaky_s1
+2026-10-02 05:35:44 end exp3_random_leaky_s1 rc=0 wall=1564s peak_rss=6.593796GB
+summaries written
+2026-10-02 05:35:47 start exp3_random_fixA_s1
+2026-10-02 06:00:39 end exp3_random_fixA_s1 rc=0 wall=1491s peak_rss=6.684888GB
+summaries written
+2026-10-02 06:00:41 start exp3_temporal_leaky_s2
+2026-10-02 06:23:11 end exp3_temporal_leaky_s2 rc=0 wall=1350s peak_rss=6.534532GB
+summaries written
+2026-10-02 06:23:13 start exp3_temporal_fixA_s2
+2026-10-02 06:44:55 end exp3_temporal_fixA_s2 rc=0 wall=1303s peak_rss=6.434452GB
+summaries written
+2026-10-02 06:44:58 start exp3_random_leaky_s2
+2026-10-02 07:11:12 end exp3_random_leaky_s2 rc=0 wall=1574s peak_rss=6.586212GB
+summaries written
+2026-10-02 07:11:15 start exp3_random_fixA_s2
+2026-10-02 07:37:03 end exp3_random_fixA_s2 rc=0 wall=1549s peak_rss=6.63126GB
+2026-10-02 07:37:04 !!! LEAK CHECK FAILED for random_fixA_s2: 1 thresholds > 1e9
+summaries written
+2026-10-02 07:37:06 tier2 complete
+2026-10-02 07:37:06 === tier3 ===
+2026-10-02 07:37:06 start exp3_temporal_fixB_s0
+2026-10-02 07:52:27 end exp3_temporal_fixB_s0 rc=0 wall=921s peak_rss=5.299072GB
+summaries written
+2026-10-02 07:52:30 start exp3_random_fixB_s0
+2026-10-02 08:10:49 end exp3_random_fixB_s0 rc=0 wall=1099s peak_rss=5.78366GB
+summaries written
+2026-10-02 08:10:51 start exp3_temporal_fixB_s1
+2026-10-02 08:25:28 end exp3_temporal_fixB_s1 rc=0 wall=876s peak_rss=5.86348GB
+summaries written
+2026-10-02 08:25:30 start exp3_random_fixB_s1
+2026-10-02 08:43:45 end exp3_random_fixB_s1 rc=0 wall=1094s peak_rss=5.864608GB
+summaries written
+2026-10-02 08:43:47 start exp3_temporal_fixB_s2
+2026-10-02 08:58:58 end exp3_temporal_fixB_s2 rc=0 wall=911s peak_rss=5.8071GB
+summaries written
+2026-10-02 08:59:01 start exp3_random_fixB_s2
+2026-10-02 09:17:22 end exp3_random_fixB_s2 rc=0 wall=1101s peak_rss=5.649392GB
+summaries written
+2026-10-02 09:17:24 tier3 complete
+2026-10-02 09:17:24 === tier4 ===
+2026-10-02 09:17:24 start exp3_temporal_leaky_s3
+2026-10-02 09:40:11 end exp3_temporal_leaky_s3 rc=0 wall=1366s peak_rss=5.852452GB
+summaries written
+2026-10-02 09:40:13 start exp3_temporal_fixA_s3
+2026-10-02 10:02:22 end exp3_temporal_fixA_s3 rc=0 wall=1329s peak_rss=6.011432GB
+summaries written
+2026-10-02 10:02:25 start exp3_random_leaky_s3
+2026-10-02 10:29:08 end exp3_random_leaky_s3 rc=0 wall=1603s peak_rss=5.957384GB
+summaries written
+2026-10-02 10:29:11 start exp3_random_fixA_s3
+2026-10-02 10:54:58 end exp3_random_fixA_s3 rc=0 wall=1547s peak_rss=6.015896GB
+summaries written
+2026-10-02 10:55:01 start exp3_temporal_fixB_s3
+2026-10-02 11:09:58 end exp3_temporal_fixB_s3 rc=0 wall=898s peak_rss=5.862956GB
+summaries written
+2026-10-02 11:10:01 start exp3_random_fixB_s3
+2026-10-02 11:28:51 end exp3_random_fixB_s3 rc=0 wall=1130s peak_rss=5.84794GB
+summaries written
+2026-10-02 11:28:54 start exp3_temporal_leaky_s4
+2026-10-02 11:54:51 end exp3_temporal_leaky_s4 rc=0 wall=1557s peak_rss=5.533952GB
+summaries written
+2026-10-02 11:54:52 start exp3_temporal_fixA_s4
+2026-10-02 12:17:46 end exp3_temporal_fixA_s4 rc=0 wall=1374s peak_rss=5.256912GB
+summaries written
+2026-10-02 12:17:49 start exp3_random_leaky_s4

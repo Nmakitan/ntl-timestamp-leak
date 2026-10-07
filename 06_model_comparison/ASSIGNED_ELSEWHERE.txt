@@ -1,0 +1,12 @@
+d2017_*_lr_*
+d2017_*_xgb_*
+cpacket_*_lr_*
+cpacket_*_xgb_*
+d2017_*_linsvc_*
+d2017_*_mlp_*
+cpacket_*_linsvc_*
+cpacket_*_mlp_*
+# linsvc dropped by user decision 2026-10-02 (too slow: >2.5 h per run, single-threaded, ~6 GB on 2018)
+*_linsvc_*
+d2017_*_knn_*
+cpacket_*_knn_*

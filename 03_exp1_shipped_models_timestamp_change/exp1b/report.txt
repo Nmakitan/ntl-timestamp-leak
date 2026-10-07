@@ -1,0 +1,126 @@
+driver finished 2026-10-02 02:46:47
+02:45:37 exit ('knn', 'shuffle_s4') rc 0
+02:46:37 exit ('ensemble', 'shuffle_s4') rc 0
+ALL DONE
+
+
+=== RF (sample n=20001, leaked 6654) ===
+condition                          acc  acc_pw     mF1  mF1_pw |   L_acc   L_mF1 | changed sanity
+baseline                        0.8897  0.8930  0.8178  0.7578 |  0.6692  0.3539 |       0 True
+plus_8y                         0.8708  0.8750  0.7989  0.7993 |  0.6123  0.2134 |     451 True
+plus_1d                         0.8353  0.8384  0.7387  0.7361 |  0.5057  0.2144 |    2252 True
+zero_fixed_data_leaky_model     0.8708  0.8750  0.7989  0.7993 |  0.6123  0.2134 |     451 True
+shuffle_s0                      0.8717  0.8759  0.7662  0.7369 |  0.6151  0.2247 |     632 True
+shuffle_s1                      0.8720  0.8762  0.7636  0.7370 |  0.6160  0.2250 |     626 True
+shuffle_s2                      0.8731  0.8773  0.7674  0.7377 |  0.6193  0.2284 |     676 True
+shuffle_s3                      0.8725  0.8767  0.7663  0.7373 |  0.6175  0.2264 |     659 True
+shuffle_s4                      0.8716  0.8758  0.7629  0.7368 |  0.6147  0.2244 |     644 True
+  shuffle x5 all.accuracy_popw: 0.8764 ± 0.0006
+  shuffle x5 all.macro_f1_popw: 0.7371 ± 0.0004
+  shuffle x5 leaked_rows.accuracy: 0.6165 ± 0.0019
+  shuffle x5 leaked_rows.macro_f1: 0.2258 ± 0.0016
+  recall (all rows)        baseline    plus_8y    plus_1d zero_fixed shuffle_s0
+  Benign                   0.9966     1.0000     0.9324     1.0000     0.9926
+  Bot                      0.5023     0.4985     0.4985     0.4985     0.4985
+  Brute_Force_Web          0.5075     0.4925     0.4925     0.4925     0.4925
+  Brute_Force_XSS          0.5862     0.4828     0.4828     0.4828     0.4828
+  DDoS_HOIC                0.6954     0.6104     0.6104     0.6104     0.6319
+  DDoS_LOIC_HTTP           1.0000     1.0000     1.0000     1.0000     1.0000
+  DoS_HULK                 0.9694     0.9687     0.9687     0.9687     0.9687
+  DoS_SlowHTTP             1.0000     1.0000     1.0000     1.0000     1.0000
+  SQL_Injection            0.9615     0.4231     0.9615     0.4231     0.4231
+  precision (pop-weighted)   baseline    plus_8y    plus_1d zero_fixed shuffle_s0
+  Benign                   0.8367     0.8121     0.8803     0.8121     0.8205
+  Bot                      1.0000     1.0000     1.0000     1.0000     0.9893
+  Brute_Force_Web          1.0000     1.0000     1.0000     1.0000     1.0000
+  Brute_Force_XSS          1.0000     1.0000     1.0000     1.0000     1.0000
+  DDoS_HOIC                1.0000     1.0000     1.0000     1.0000     0.9703
+  DDoS_LOIC_HTTP           1.0000     1.0000     1.0000     1.0000     1.0000
+  DoS_HULK                 1.0000     1.0000     1.0000     1.0000     1.0000
+  DoS_SlowHTTP             1.0000     1.0000     1.0000     1.0000     1.0000
+  SQL_Injection            0.0125     0.9167     0.0002     0.9167     0.0052
+  plus_8y top base->new: [('DDoS_HOIC', 'Benign', 387), ('SQL_Injec', 'Benign', 50), ('Brute_For', 'Benign', 6), ('Bot', 'Benign', 5), ('Brute_For', 'Benign', 2)]
+  plus_1d top base->new: [('Benign', 'SQL_Injec', 1851), ('DDoS_HOIC', 'Benign', 387), ('Bot', 'Benign', 5), ('Brute_For', 'Benign', 3), ('Brute_For', 'SQL_Injec', 3)]
+  zero_fixed_data_leaky_model top base->new: [('DDoS_HOIC', 'Benign', 387), ('SQL_Injec', 'Benign', 50), ('Brute_For', 'Benign', 6), ('Bot', 'Benign', 5), ('Brute_For', 'Benign', 2)]
+  shuffle_s0 top base->new: [('DDoS_HOIC', 'Benign', 354), ('Benign', 'DDoS_HOIC', 166), ('SQL_Injec', 'Benign', 50), ('Benign', 'SQL_Injec', 35), ('DDoS_HOIC', 'SQL_Injec', 6)]
+
+=== KNN (sample n=20001, leaked 6654) ===
+condition                          acc  acc_pw     mF1  mF1_pw |   L_acc   L_mF1 | changed sanity
+baseline                        0.9922  0.9934  0.9083  0.9083 |  0.9904  0.6746 |       0 True
+plus_8y                         0.8668  0.8713  0.7608  0.7631 |  0.6135  0.2173 |    2523 True
+plus_1d                         0.9034  0.9036  0.7926  0.7788 |  0.7235  0.4675 |    1776 True
+zero_fixed_data_leaky_model     0.8664  0.8709  0.7618  0.7623 |  0.6123  0.2134 |    2533 True
+shuffle_s0                      0.9142  0.9184  0.7930  0.7386 |  0.7561  0.3878 |    1573 True
+shuffle_s1                      0.9149  0.9189  0.7979  0.7413 |  0.7580  0.4037 |    1561 True
+shuffle_s2                      0.9194  0.9236  0.7980  0.7431 |  0.7717  0.4000 |    1469 True
+shuffle_s3                      0.9138  0.9180  0.7922  0.7360 |  0.7549  0.3861 |    1581 True
+shuffle_s4                      0.9145  0.9186  0.7934  0.7378 |  0.7568  0.3948 |    1567 True
+  shuffle x5 all.accuracy_popw: 0.9195 ± 0.0023
+  shuffle x5 all.macro_f1_popw: 0.7394 ± 0.0029
+  shuffle x5 leaked_rows.accuracy: 0.7595 ± 0.0069
+  shuffle x5 leaked_rows.macro_f1: 0.3945 ± 0.0076
+  recall (all rows)        baseline    plus_8y    plus_1d zero_fixed shuffle_s0
+  Benign                   0.9998     0.9996     0.9997     0.9999     0.9997
+  Bot                      0.9347     0.4455     0.9347     0.4370     0.5000
+  Brute_Force_Web          0.9776     0.4851     0.9776     0.4851     0.5000
+  Brute_Force_XSS          0.9655     0.4828     0.9655     0.4828     0.7241
+  DDoS_HOIC                1.0000     0.6104     0.6104     0.6104     0.7995
+  DDoS_LOIC_HTTP           1.0000     1.0000     1.0000     1.0000     1.0000
+  DoS_HULK                 0.9694     0.9687     0.9687     0.9687     0.9687
+  DoS_SlowHTTP             1.0000     1.0000     1.0000     1.0000     1.0000
+  SQL_Injection            0.1923     0.1923     0.1923     0.1923     0.1923
+  precision (pop-weighted)   baseline    plus_8y    plus_1d zero_fixed shuffle_s0
+  Benign                   0.9881     0.8079     0.9880     0.8072     0.9104
+  Bot                      0.9992     0.9930     0.9984     1.0000     0.7406
+  Brute_Force_Web          0.8792     0.9559     0.0013     0.9559     0.0524
+  Brute_Force_XSS          1.0000     1.0000     1.0000     1.0000     1.0000
+  DDoS_HOIC                1.0000     1.0000     1.0000     1.0000     0.9212
+  DDoS_LOIC_HTTP           0.9992     0.9992     0.9992     0.9992     0.9992
+  DoS_HULK                 1.0000     1.0000     1.0000     1.0000     1.0000
+  DoS_SlowHTTP             1.0000     1.0000     1.0000     1.0000     1.0000
+  SQL_Injection            1.0000     1.0000     1.0000     1.0000     1.0000
+  plus_8y top base->new: [('DDoS_HOIC', 'Benign', 1774), ('Bot', 'Benign', 637), ('Brute_For', 'Benign', 49), ('Brute_For', 'Bot', 32), ('Brute_For', 'Bot', 28)]
+  plus_1d top base->new: [('DDoS_HOIC', 'Brute_For', 1774), ('Benign', 'Bot', 1), ('DoS_HULK', 'Benign', 1)]
+  zero_fixed_data_leaky_model top base->new: [('DDoS_HOIC', 'Benign', 1774), ('Bot', 'Benign', 649), ('Brute_For', 'Benign', 81), ('Brute_For', 'Benign', 28), ('DoS_HULK', 'Benign', 1)]
+  shuffle_s0 top base->new: [('DDoS_HOIC', 'Benign', 673), ('Bot', 'DDoS_HOIC', 311), ('Bot', 'Benign', 247), ('DDoS_HOIC', 'Bot', 226), ('Brute_For', 'Benign', 63)]
+
+=== ENSEMBLE (sample n=20001, leaked 6654) ===
+condition                          acc  acc_pw     mF1  mF1_pw |   L_acc   L_mF1 | changed sanity
+baseline                        0.9925  0.9934  0.9525  0.9525 |  0.9910  0.7580 |       0 True
+plus_8y                         0.8669  0.8714  0.7686  0.7690 |  0.6136  0.2172 |    2525 True
+plus_1d                         0.9028  0.9036  0.8120  0.8007 |  0.7215  0.5171 |    1796 True
+zero_fixed_data_leaky_model     0.8665  0.8709  0.7677  0.7682 |  0.6123  0.2134 |    2530 True
+shuffle_s0                      0.9132  0.9180  0.7707  0.7233 |  0.7528  0.3302 |    1595 True
+shuffle_s1                      0.9137  0.9186  0.7694  0.7228 |  0.7543  0.3273 |    1585 True
+shuffle_s2                      0.9183  0.9232  0.7745  0.7187 |  0.7681  0.3336 |    1494 True
+shuffle_s3                      0.9130  0.9178  0.7675  0.7197 |  0.7520  0.3161 |    1600 True
+shuffle_s4                      0.9134  0.9183  0.7657  0.7453 |  0.7534  0.3170 |    1591 True
+  shuffle x5 all.accuracy_popw: 0.9192 ± 0.0023
+  shuffle x5 all.macro_f1_popw: 0.7259 ± 0.0110
+  shuffle x5 leaked_rows.accuracy: 0.7561 ± 0.0068
+  shuffle x5 leaked_rows.macro_f1: 0.3248 ± 0.0079
+  recall (all rows)        baseline    plus_8y    plus_1d zero_fixed shuffle_s0
+  Benign                   1.0000     0.9998     0.9999     1.0000     0.9999
+  Bot                      0.9332     0.4455     0.9339     0.4370     0.4923
+  Brute_Force_Web          0.9179     0.4851     0.7836     0.4851     0.4851
+  Brute_Force_XSS          0.9655     0.4828     0.9655     0.4828     0.5345
+  DDoS_HOIC                1.0000     0.6104     0.6104     0.6104     0.7995
+  DDoS_LOIC_HTTP           1.0000     1.0000     1.0000     1.0000     1.0000
+  DoS_HULK                 0.9694     0.9687     0.9687     0.9687     0.9687
+  DoS_SlowHTTP             1.0000     1.0000     1.0000     1.0000     1.0000
+  SQL_Injection            0.7308     0.2308     0.7308     0.2308     0.2308
+  precision (pop-weighted)   baseline    plus_8y    plus_1d zero_fixed shuffle_s0
+  Benign                   0.9879     0.8078     0.9879     0.8072     0.9091
+  Bot                      1.0000     0.9966     0.9992     1.0000     0.7453
+  Brute_Force_Web          0.9685     0.9559     0.0011     0.9559     0.3654
+  Brute_Force_XSS          1.0000     1.0000     1.0000     1.0000     1.0000
+  DDoS_HOIC                1.0000     1.0000     1.0000     1.0000     0.9211
+  DDoS_LOIC_HTTP           1.0000     1.0000     1.0000     1.0000     1.0000
+  DoS_HULK                 1.0000     1.0000     1.0000     1.0000     1.0000
+  DoS_SlowHTTP             1.0000     1.0000     1.0000     1.0000     1.0000
+  SQL_Injection            0.6786     1.0000     0.4043     1.0000     0.0054
+  plus_8y top base->new: [('DDoS_HOIC', 'Benign', 1774), ('Bot', 'Benign', 637), ('Brute_For', 'Benign', 59), ('Brute_For', 'Benign', 28), ('SQL_Injec', 'Benign', 22)]
+  plus_1d top base->new: [('DDoS_HOIC', 'Brute_For', 1774), ('Brute_For', 'SQL_Injec', 19), ('Benign', 'Bot', 2), ('DoS_HULK', 'Benign', 1)]
+  zero_fixed_data_leaky_model top base->new: [('DDoS_HOIC', 'Benign', 1774), ('Bot', 'Benign', 646), ('Brute_For', 'Benign', 59), ('Brute_For', 'Benign', 28), ('SQL_Injec', 'Benign', 22)]
+  shuffle_s0 top base->new: [('DDoS_HOIC', 'Benign', 680), ('Bot', 'DDoS_HOIC', 311), ('Bot', 'Benign', 255), ('DDoS_HOIC', 'Bot', 219), ('Brute_For', 'Benign', 55)]
+REPORT EXIT 0

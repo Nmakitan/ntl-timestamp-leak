@@ -1,0 +1,370 @@
+{
+ "d2017": {
+  "n_iat_cols": 15,
+  "n_features": 114,
+  "units": {
+   "leaked_min": 1499083008.0,
+   "leaked_max": 1499457792.0,
+   "legit_nonzero_median": 0.01330679003149271,
+   "legit_nonzero_p9999": 1261.1278076171875,
+   "legit_max": 28918.865234375,
+   "cells_in_1e6_1e9": 0
+  },
+  "per_class": {
+   "Benign": {
+    "n_train": 439577,
+    "row_leak_pct": 35.10329248345568,
+    "legit_zero_cell_pct": 9.446643133488273
+   },
+   "Botnet_ARES": {
+    "n_train": 1355,
+    "row_leak_pct": 82.36162361623616,
+    "legit_zero_cell_pct": 6.248256624825663
+   },
+   "DDoS_LOIT": {
+    "n_train": 23559,
+    "row_leak_pct": 0.055180610382444074,
+    "legit_zero_cell_pct": 0.8669554630652058
+   },
+   "DoS_GoldenEye": {
+    "n_train": 2058,
+    "row_leak_pct": 5.97667638483965,
+    "legit_zero_cell_pct": 0.85099052540913
+   },
+   "DoS_Hulk": {
+    "n_train": 85945,
+    "row_leak_pct": 37.70783640700448,
+    "legit_zero_cell_pct": 13.373803786789198
+   },
+   "DoS_Slowhttptest": {
+    "n_train": 1688,
+    "row_leak_pct": 27.13270142180095,
+    "legit_zero_cell_pct": 19.723577235772357
+   },
+   "DoS_Slowloris": {
+    "n_train": 1274,
+    "row_leak_pct": 20.6436420722135,
+    "legit_zero_cell_pct": 13.880646224859875
+   },
+   "FTP-Patator": {
+    "n_train": 2345,
+    "row_leak_pct": 59.70149253731343,
+    "legit_zero_cell_pct": 0.36684303350970016
+   },
+   "Heartbleed": {
+    "n_train": 9,
+    "row_leak_pct": 22.22222222222222,
+    "legit_zero_cell_pct": 0.9523809523809524
+   },
+   "Port_Scan": {
+    "n_train": 39700,
+    "row_leak_pct": 99.8639798488665,
+    "legit_zero_cell_pct": 0.0
+   },
+   "SSH-Patator": {
+    "n_train": 1464,
+    "row_leak_pct": 51.161202185792355,
+    "legit_zero_cell_pct": 0.027972027972027972
+   },
+   "Web_Brute_Force": {
+    "n_train": 673,
+    "row_leak_pct": 51.857355126300156,
+    "legit_zero_cell_pct": 5.555555555555555
+   },
+   "Web_SQL_Injection": {
+    "n_train": 18,
+    "row_leak_pct": 44.44444444444444,
+    "legit_zero_cell_pct": 4.666666666666667
+   },
+   "Web_XSS": {
+    "n_train": 334,
+    "row_leak_pct": 48.20359281437126,
+    "legit_zero_cell_pct": 6.28131021194605
+   }
+  },
+  "mask_models": {
+   "majority baseline": {
+    "accuracy": 0.7326504930985885,
+    "macro_f1": 0.0604070795430673,
+    "mean_attack_recall": 0.0
+   },
+   "row leaked flag (1 bit)": {
+    "accuracy": 0.105325070999306,
+    "macro_f1": 0.02947876882613224,
+    "mean_attack_recall": 0.18165017031742783
+   },
+   "per-col leaked mask": {
+    "accuracy": 0.11237824295790245,
+    "macro_f1": 0.0568967562069164,
+    "mean_attack_recall": 0.2726821184075503
+   },
+   "zero mask, raw data (legit zeros only)": {
+    "accuracy": 0.3565453074831874,
+    "macro_f1": 0.11715598564935252,
+    "mean_attack_recall": 0.348788820502326
+   },
+   "zero mask, after fixA (legit + leaked)": {
+    "accuracy": 0.375786898720782,
+    "macro_f1": 0.12927092051006397,
+    "mean_attack_recall": 0.3218276953221198
+   }
+  }
+ },
+ "cpacket": {
+  "n_iat_cols": 30,
+  "n_features": 313,
+  "units": {
+   "leaked_min": 1702562432.0,
+   "leaked_max": 1703023232.0,
+   "legit_nonzero_median": 0.11190000176429749,
+   "legit_nonzero_p9999": 3601.2017363281193,
+   "legit_max": 28816.0078125,
+   "cells_in_1e6_1e9": 0
+  },
+  "per_class": {
+   "Attack / Attack-Killall-v2": {
+    "n_train": 4525,
+    "row_leak_pct": 24.39779005524862,
+    "legit_zero_cell_pct": 22.240085744908896
+   },
+   "Attack / Attack-Killer-TCP": {
+    "n_train": 4691,
+    "row_leak_pct": 28.202941803453424,
+    "legit_zero_cell_pct": 22.007125890736344
+   },
+   "Attack / Attack-TCP-BYPass-V1": {
+    "n_train": 103776,
+    "row_leak_pct": 95.90174992291088,
+    "legit_zero_cell_pct": 19.612822321498548
+   },
+   "Attack / Attack-TCP-Control": {
+    "n_train": 4308,
+    "row_leak_pct": 25.27855153203343,
+    "legit_zero_cell_pct": 17.45469607538573
+   },
+   "Attack / Attack-TCP-Flag-ACK": {
+    "n_train": 8012,
+    "row_leak_pct": 16.11333000499251,
+    "legit_zero_cell_pct": 12.427218171899023
+   },
+   "Attack / Attack-TCP-Flag-ACK-PSH": {
+    "n_train": 5611,
+    "row_leak_pct": 21.867759757618963,
+    "legit_zero_cell_pct": 19.548357664233578
+   },
+   "Attack / Attack-TCP-Flag-MIX": {
+    "n_train": 5562,
+    "row_leak_pct": 23.570658036677454,
+    "legit_zero_cell_pct": 17.516662746020543
+   },
+   "Attack / Attack-TCP-Flag-OSYN": {
+    "n_train": 650,
+    "row_leak_pct": 82.0,
+    "legit_zero_cell_pct": 15.783475783475783
+   },
+   "Attack / Attack-TCP-Flag-OSYNP": {
+    "n_train": 668,
+    "row_leak_pct": 83.38323353293413,
+    "legit_zero_cell_pct": 12.042042042042041
+   },
+   "Attack / Attack-TCP-Flag-RST-ACK": {
+    "n_train": 1084,
+    "row_leak_pct": 42.066420664206646,
+    "legit_zero_cell_pct": 4.660297239915074
+   },
+   "Attack / Attack-TCP-Flag-SYN": {
+    "n_train": 5884,
+    "row_leak_pct": 22.739632902787218,
+    "legit_zero_cell_pct": 18.741017744537324
+   },
+   "Attack / Attack-TCP-Flag-SYN-ACK": {
+    "n_train": 6153,
+    "row_leak_pct": 19.9577441898261,
+    "legit_zero_cell_pct": 16.428426395939084
+   },
+   "Attack / Attack-TCP-Flag-SYN-TFO": {
+    "n_train": 2723,
+    "row_leak_pct": 22.36503856041131,
+    "legit_zero_cell_pct": 2.6600441501103753
+   },
+   "Attack / Attack-TCP-Flag-SYN-TIME": {
+    "n_train": 1020,
+    "row_leak_pct": 67.45098039215686,
+    "legit_zero_cell_pct": 14.26706827309237
+   },
+   "Attack / Attack-TCP-IGMP": {
+    "n_train": 5438,
+    "row_leak_pct": 22.54505332842957,
+    "legit_zero_cell_pct": 19.26559037670149
+   },
+   "Attack / Attack-TCP-SYN": {
+    "n_train": 5215,
+    "row_leak_pct": 20.84372003835091,
+    "legit_zero_cell_pct": 19.26921834625323
+   },
+   "Attack / Attack-TCP-Valid-SYN": {
+    "n_train": 6032,
+    "row_leak_pct": 17.572944297082227,
+    "legit_zero_cell_pct": 19.30410297666935
+   },
+   "Benign / Benign": {
+    "n_train": 226713,
+    "row_leak_pct": 80.9913855844173,
+    "legit_zero_cell_pct": 56.293614881850175
+   },
+   "Benign / Benign-Email-Receive": {
+    "n_train": 1046,
+    "row_leak_pct": 66.82600382409177,
+    "legit_zero_cell_pct": 35.49471661863593
+   },
+   "Benign / Benign-Email-Send": {
+    "n_train": 1454,
+    "row_leak_pct": 59.55983493810179,
+    "legit_zero_cell_pct": 27.40362811791383
+   },
+   "Benign / Benign-FTP": {
+    "n_train": 362,
+    "row_leak_pct": 64.9171270718232,
+    "legit_zero_cell_pct": 30.47244094488189
+   },
+   "Benign / Benign-SSH": {
+    "n_train": 2239,
+    "row_leak_pct": 47.610540419830286,
+    "legit_zero_cell_pct": 20.394998579141802
+   },
+   "Benign / Benign-Systemic": {
+    "n_train": 36055,
+    "row_leak_pct": 17.082235473582028,
+    "legit_zero_cell_pct": 8.227968067076977
+   },
+   "Benign / Benign-Telnet": {
+    "n_train": 3576,
+    "row_leak_pct": 84.00447427293065,
+    "legit_zero_cell_pct": 65.46620046620046
+   },
+   "Benign / Benign-Web_Browsing_HTTP-S": {
+    "n_train": 38454,
+    "row_leak_pct": 54.184220107141,
+    "legit_zero_cell_pct": 19.657168804631628
+   },
+   "Suspicious / Suspicious": {
+    "n_train": 44329,
+    "row_leak_pct": 26.28076428523089,
+    "legit_zero_cell_pct": 11.687526138090721
+   }
+  },
+  "mask_models": {
+   "majority baseline": {
+    "accuracy": 0.43135609666997726,
+    "macro_f1": 0.023181679445512117,
+    "mean_attack_recall": 0.0
+   },
+   "row leaked flag (1 bit)": {
+    "accuracy": 0.2022329531833282,
+    "macro_f1": 0.01981980523487107,
+    "mean_attack_recall": 0.1053849077406938
+   },
+   "per-col leaked mask": {
+    "accuracy": 0.2062171078918228,
+    "macro_f1": 0.029022180295023646,
+    "mean_attack_recall": 0.12639212053655546
+   },
+   "zero mask, raw data (legit zeros only)": {
+    "accuracy": 0.31989109216069045,
+    "macro_f1": 0.10779396752322426,
+    "mean_attack_recall": 0.14270332719151355
+   },
+   "zero mask, after fixA (legit + leaked)": {
+    "accuracy": 0.33024532803634826,
+    "macro_f1": 0.1124235936993025,
+    "mean_attack_recall": 0.15632667096453903
+   }
+  }
+ },
+ "d2018": {
+  "n_iat_cols": 30,
+  "n_features": 313,
+  "units": {
+   "leaked_min": 1518784640.0,
+   "leaked_max": 1520026240.0,
+   "legit_nonzero_median": 0.2955999970436096,
+   "legit_nonzero_p9999": 1671.2166970943313,
+   "legit_max": 32419.607421875,
+   "cells_in_1e6_1e9": 0
+  },
+  "per_class": {
+   "Benign": {
+    "n_train": 323943,
+    "row_leak_pct": 35.6448511003479,
+    "legit_zero_cell_pct": 9.243918506224597
+   },
+   "Bot": {
+    "n_train": 39437,
+    "row_leak_pct": 50.100159748459575,
+    "legit_zero_cell_pct": 16.861798533123295
+   },
+   "Brute_Force_Web": {
+    "n_train": 402,
+    "row_leak_pct": 50.24875621890548,
+    "legit_zero_cell_pct": 5.333333333333334
+   },
+   "Brute_Force_XSS": {
+    "n_train": 174,
+    "row_leak_pct": 53.44827586206896,
+    "legit_zero_cell_pct": 2.880658436213992
+   },
+   "DDoS_HOIC": {
+    "n_train": 137940,
+    "row_leak_pct": 49.79701319414238,
+    "legit_zero_cell_pct": 12.46113116726835
+   },
+   "DDoS_LOIC_HTTP": {
+    "n_train": 39909,
+    "row_leak_pct": 0.07517101405697962,
+    "legit_zero_cell_pct": 9.021874503707048
+   },
+   "DoS_HULK": {
+    "n_train": 43566,
+    "row_leak_pct": 1.1385025019510628,
+    "legit_zero_cell_pct": 6.19216778887083
+   },
+   "DoS_SlowHTTP": {
+    "n_train": 14549,
+    "row_leak_pct": 100.0,
+    "legit_zero_cell_pct": null
+   },
+   "SQL_Injection": {
+    "n_train": 80,
+    "row_leak_pct": 51.24999999999999,
+    "legit_zero_cell_pct": 7.777777777777778
+   }
+  },
+  "mask_models": {
+   "majority baseline": {
+    "accuracy": 0.5403886040148084,
+    "macro_f1": 0.07795848147327683,
+    "mean_attack_recall": 0.0
+   },
+   "row leaked flag (1 bit)": {
+    "accuracy": 0.0907990526339994,
+    "macro_f1": 0.03492012866017475,
+    "mean_attack_recall": 0.24991365256555498
+   },
+   "per-col leaked mask": {
+    "accuracy": 0.09647773000068983,
+    "macro_f1": 0.10733807076913815,
+    "mean_attack_recall": 0.32136590720746483
+   },
+   "zero mask, raw data (legit zeros only)": {
+    "accuracy": 0.3477053967669986,
+    "macro_f1": 0.33346009745255906,
+    "mean_attack_recall": 0.5971927605262337
+   },
+   "zero mask, after fixA (legit + leaked)": {
+    "accuracy": 0.34865460231322865,
+    "macro_f1": 0.3336353755754631,
+    "mean_attack_recall": 0.5732913462837956
+   }
+  }
+ }
+}

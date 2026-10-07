@@ -1,0 +1,16 @@
+2026-10-03 06:29:16 finishing KNN
+--- laptop integrity: sklearn files and data caches vs PC (expect 0 differences)
+data caches: identical
+sklearn files: identical
+d2018 random knn: 5 conditions, 92 tuples
+d2018 temporal knn: 5 conditions, 80 tuples
+d2017 random knn: 5 conditions, 236 tuples
+d2017 temporal knn: 5 conditions, 238 tuples
+cpacket random knn: 5 conditions, 3686 tuples
+cpacket temporal knn: 5 conditions, 3231 tuples
+2412 rows -> /home/nik/Desktop/ntl_models/results/BOOTSTRAP_CI.csv
+120 runs, 7072 rows -> /home/nik/Desktop/ntl_models/results/ALL_RUNS_pooled.csv
+machines: {'pc': 76, 'laptop': 44, 'unknown': 0}
+summary regenerated
+/home/nik/Desktop/NTL_timestamp_leak_MASTER.md: 177 KB, 2,209 lines
+2026-10-03 06:29:45 done

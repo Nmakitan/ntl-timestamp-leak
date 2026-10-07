@@ -1,0 +1,51 @@
+You initiated NTLFlowLyzer!
+>> Analyzing the repro.pcap ...
+>> The input PCAP file contains 21 packets.
+>> Parser has started...
+>> Analyzing repro.pcap
+==================================================
+Number and percentage of IP packets:
+  Total IP packets: 21
+  Percentage of IP packets: 100.00%
+
+Number and percentage of TCP packets:
+  Total TCP packets: 21
+  Percentage of TCP packets: 100.00%
+
+Number and percentage of UDP packets:
+  Total UDP packets: 0
+  Percentage of UDP packets: 0.00%
+
+Top 10 Application Layer Protocols:
+  Port 80 (HTTP): 12 packets, 57.14%
+  Port 40004 (Unknown): 4 packets, 19.05%
+  Port 40003 (Unknown): 3 packets, 14.29%
+  Port 40002 (Unknown): 2 packets, 9.52%
+==================================================
+>> End of parsing pcap file(s).
+>>> 21 packets analyzed and 6 flows created in total.
+##################################################
+>> Parser Report:
+##################################################
+>>> Number and percentage of IP packets:
+      Total IP packets: 21
+      Percentage of IP packets: 100.00%
+
+>>> Number and percentage of TCP packets:
+      Total TCP packets: 21
+      Percentage of TCP packets: 100.00%
+
+>>> Number and percentage of UDP packets:
+      Total UDP packets: 0
+      Percentage of UDP packets: 0.00%
+
+##################################################
+>> Preparing the output file...
+>> Writing 1 flows with extracted features...
+>> Writing 5 flows with extracted features...
+>> Extracting finished, lets go for final writing...
+>> Writing the last 0 flows with extracted features...
+>> Writing finished, lets wrapp up!
+>> Extracting features of 1 number of flows...
+>> Extracting features of 5 number of flows...
+>> Results are ready!

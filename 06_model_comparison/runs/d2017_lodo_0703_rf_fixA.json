@@ -1,0 +1,657 @@
+{
+ "dataset": "d2017",
+ "split": "lodo_0703",
+ "model": "rf",
+ "variant": "fixA",
+ "params": "RandomForestClassifier(class_weight='balanced', max_depth=30,\n                       min_samples_leaf=10, n_estimators=200, n_jobs=2,\n                       random_state=0)",
+ "n_train": 599999,
+ "n_test": 495338,
+ "n_features": 114,
+ "fit_seconds": 92.8,
+ "predict_seconds": 9.3,
+ "peak_rss_gb_self": 1.761084,
+ "warnings": [],
+ "n_warnings": 0,
+ "conditions": {
+  "fixA": {
+   "all": {
+    "n": 495338,
+    "accuracy": 0.8542126790191747,
+    "macro_f1": 0.06581250581328973,
+    "mean_attack_recall": null,
+    "n_attack_classes_in_mean": 0,
+    "per_class": {
+     "Benign": {
+      "recall": 0.8542126790191747,
+      "precision": 1.0,
+      "support": 495338,
+      "correct": 423124
+     },
+     "Botnet_ARES": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DDoS_LOIT": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DoS_GoldenEye": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DoS_Hulk": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DoS_Slowhttptest": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DoS_Slowloris": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "FTP-Patator": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Heartbleed": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Port_Scan": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "SSH-Patator": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Web_Brute_Force": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Web_SQL_Injection": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Web_XSS": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     }
+    },
+    "confusion": [
+     [
+      423124,
+      6869,
+      1,
+      34,
+      1979,
+      310,
+      64,
+      9559,
+      25172,
+      8,
+      4195,
+      797,
+      1862,
+      21364
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   "leaked_rows": {
+    "n": 176234,
+    "accuracy": 0.6164077306308657,
+    "macro_f1": 0.05447774442319246,
+    "mean_attack_recall": null,
+    "n_attack_classes_in_mean": 0,
+    "per_class": {
+     "Benign": {
+      "recall": 0.6164077306308657,
+      "precision": 1.0,
+      "support": 176234,
+      "correct": 108632
+     },
+     "Botnet_ARES": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DDoS_LOIT": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DoS_GoldenEye": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DoS_Hulk": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DoS_Slowhttptest": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "DoS_Slowloris": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "FTP-Patator": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Heartbleed": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Port_Scan": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "SSH-Patator": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Web_Brute_Force": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Web_SQL_Injection": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     },
+     "Web_XSS": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 0,
+      "correct": 0
+     }
+    },
+    "confusion": [
+     [
+      108632,
+      6611,
+      0,
+      0,
+      88,
+      2,
+      7,
+      9345,
+      25172,
+      8,
+      4186,
+      134,
+      1672,
+      20377
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ]
+   }
+  }
+ }
+}

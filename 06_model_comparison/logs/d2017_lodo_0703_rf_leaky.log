@@ -1,0 +1,1 @@
+d2017 lodo_0703 rf leaky: leaky acc=0.9886 leaked=0.9935 | leaky_plus8y acc=0.9893 leaked=0.9954 | leaky_zero acc=0.9909 leaked=1.0000 | fit 97s, warnings 0

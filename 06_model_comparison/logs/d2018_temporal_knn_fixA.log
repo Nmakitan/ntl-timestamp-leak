@@ -1,0 +1,12 @@
+04:29:44 predicted 100,000 of 1,087,223 rows
+04:35:41 predicted 200,000 of 1,087,223 rows
+04:41:35 predicted 300,000 of 1,087,223 rows
+04:47:30 predicted 400,000 of 1,087,223 rows
+04:53:26 predicted 500,000 of 1,087,223 rows
+04:59:22 predicted 600,000 of 1,087,223 rows
+05:05:20 predicted 700,000 of 1,087,223 rows
+05:11:19 predicted 800,000 of 1,087,223 rows
+05:17:15 predicted 900,000 of 1,087,223 rows
+05:23:11 predicted 1,000,000 of 1,087,223 rows
+05:28:21 predicted 1,087,223 of 1,087,223 rows
+d2018 temporal knn fixA: fixA acc=0.9036 leaked=0.7210 | fit 3s, warnings 0

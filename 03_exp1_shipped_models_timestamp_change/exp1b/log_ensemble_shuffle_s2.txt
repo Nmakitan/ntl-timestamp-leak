@@ -1,0 +1,8 @@
+[0;93m2026-10-02 01:27:50.190086881 [W:onnxruntime:, graph.cc:5566 CleanUnusedInitializersAndNodeArgs] Removing initializer 'classes_ind'. It is not used by any node and should be removed from the model.[m
+ensemble shuffle_s2 50/6854 11s rss=0.87GB
+ensemble shuffle_s2 1050/6854 239s rss=0.87GB
+ensemble shuffle_s2 2050/6854 468s rss=0.87GB
+ensemble shuffle_s2 3050/6854 696s rss=0.87GB
+ensemble shuffle_s2 4050/6854 926s rss=0.87GB
+ensemble shuffle_s2 5050/6854 1155s rss=0.87GB
+ensemble shuffle_s2 6050/6854 1383s rss=0.87GB

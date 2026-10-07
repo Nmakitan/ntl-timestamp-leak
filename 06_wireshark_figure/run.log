@@ -1,0 +1,46 @@
+You initiated NTLFlowLyzer!
+>> Analyzing the single_syn.pcap ...
+>> The input PCAP file contains 1 packets.
+>> Parser has started...
+>> Analyzing single_syn.pcap
+==================================================
+Number and percentage of IP packets:
+  Total IP packets: 1
+  Percentage of IP packets: 100.00%
+
+Number and percentage of TCP packets:
+  Total TCP packets: 1
+  Percentage of TCP packets: 100.00%
+
+Number and percentage of UDP packets:
+  Total UDP packets: 0
+  Percentage of UDP packets: 0.00%
+
+Top 10 Application Layer Protocols:
+  Port 80 (HTTP): 1 packets, 100.00%
+==================================================
+>> End of parsing pcap file(s).
+>>> 1 packets analyzed and 1 flows created in total.
+##################################################
+>> Parser Report:
+##################################################
+>>> Number and percentage of IP packets:
+      Total IP packets: 1
+      Percentage of IP packets: 100.00%
+
+>>> Number and percentage of TCP packets:
+      Total TCP packets: 1
+      Percentage of TCP packets: 100.00%
+
+>>> Number and percentage of UDP packets:
+      Total UDP packets: 0
+      Percentage of UDP packets: 0.00%
+
+##################################################
+>> Preparing the output file...
+>> Writing 1 flows with extracted features...
+>> Extracting finished, lets go for final writing...
+>> Writing the last 0 flows with extracted features...
+>> Writing finished, lets wrapp up!
+>> Extracting features of 1 number of flows...
+>> Results are ready!

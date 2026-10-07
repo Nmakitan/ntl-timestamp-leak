@@ -1,0 +1,347 @@
+{
+ "dataset": "d2018",
+ "split": "random",
+ "model": "xgb",
+ "variant": "fixA",
+ "params": "XGBClassifier(base_score=None, booster=None, callbacks=None,\n              colsample_bylevel=None, colsample_bynode=None,\n              colsample_bytree=None, device=None, early_stopping_rounds=None,\n              enable_categorical=True, eval_metric=None, feature_types=None,\n              feature_weights=None, gamma=None, grow_policy=None,\n              importance_type=None, interaction_constraints=None,\n              learning_rate=0.1, max_bin=None, max_cat_threshold=None,\n              max_cat_to_onehot=None, max_delta_step=None, max_depth=8,\n              max_leaves=None, min_child_weight=None, missing=nan,\n              monotone_constraints=None, multi_strategy=None, n_estimators=200,\n              n_jobs=4, num_parallel_tree=None, ...)",
+ "n_train": 600000,
+ "n_test": 1087225,
+ "n_features": 313,
+ "fit_seconds": 293.5,
+ "predict_seconds": 8.9,
+ "peak_rss_gb_self": 1.982772,
+ "warnings": [],
+ "n_warnings": 0,
+ "conditions": {
+  "fixA": {
+   "all": {
+    "n": 1087225,
+    "accuracy": 0.9515537262296213,
+    "macro_f1": 0.7793237202249343,
+    "mean_attack_recall": 0.9150863378590057,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.9712386217414097,
+      "precision": 0.9995830880910339,
+      "support": 587524,
+      "correct": 570626
+     },
+     "Bot": {
+      "recall": 0.5031946871723174,
+      "precision": 0.9893617021276596,
+      "support": 71525,
+      "correct": 35991
+     },
+     "Brute_Force_Web": {
+      "recall": 0.9701492537313433,
+      "precision": 0.33078880407124683,
+      "support": 134,
+      "correct": 130
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.9655172413793104,
+      "precision": 0.9032258064516129,
+      "support": 58,
+      "correct": 56
+     },
+     "DDoS_HOIC": {
+      "recall": 0.9999080647224354,
+      "precision": 0.8756191216261153,
+      "support": 250176,
+      "correct": 250153
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.9992677737559061,
+      "precision": 1.0,
+      "support": 72382,
+      "correct": 72329
+     },
+     "DoS_HULK": {
+      "recall": 0.9980382974953489,
+      "precision": 0.999847850893876,
+      "support": 79013,
+      "correct": 78858
+     },
+     "DoS_SlowHTTP": {
+      "recall": 1.0,
+      "precision": 0.9997347882094415,
+      "support": 26387,
+      "correct": 26387
+     },
+     "SQL_Injection": {
+      "recall": 0.8846153846153846,
+      "precision": 0.001415558838010832,
+      "support": 26,
+      "correct": 23
+     }
+    },
+    "confusion": [
+     [
+      570626,
+      387,
+      263,
+      6,
+      18,
+      0,
+      10,
+      7,
+      16207
+     ],
+     [
+      7,
+      35991,
+      0,
+      0,
+      35511,
+      0,
+      0,
+      0,
+      16
+     ],
+     [
+      2,
+      0,
+      130,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      56,
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      23,
+      0,
+      0,
+      0,
+      250153,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      51,
+      0,
+      0,
+      0,
+      0,
+      72329,
+      2,
+      0,
+      0
+     ],
+     [
+      155,
+      0,
+      0,
+      0,
+      0,
+      0,
+      78858,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26387,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      23
+     ]
+    ]
+   },
+   "leaked_rows": {
+    "n": 398418,
+    "accuracy": 0.8678322766541672,
+    "macro_f1": 0.5456193489151155,
+    "mean_attack_recall": 0.6811556150517293,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.9194459284133405,
+      "precision": 0.9987720016373312,
+      "support": 209648,
+      "correct": 192760
+     },
+     "Bot": {
+      "recall": 0.007069606281610641,
+      "precision": 0.39593114241001565,
+      "support": 35787,
+      "correct": 253
+     },
+     "Brute_Force_Web": {
+      "recall": 0.9354838709677419,
+      "precision": 0.18181818181818182,
+      "support": 62,
+      "correct": 58
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.9545454545454546,
+      "precision": 0.7777777777777778,
+      "support": 22,
+      "correct": 21
+     },
+     "DDoS_HOIC": {
+      "recall": 0.9998168279377215,
+      "precision": 0.7794009002017693,
+      "support": 125565,
+      "correct": 125542
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 50,
+      "correct": 0
+     },
+     "DoS_HULK": {
+      "recall": 0.8250564334085779,
+      "precision": 0.9918588873812755,
+      "support": 886,
+      "correct": 731
+     },
+     "DoS_SlowHTTP": {
+      "recall": 1.0,
+      "precision": 0.9997347882094415,
+      "support": 26387,
+      "correct": 26387
+     },
+     "SQL_Injection": {
+      "recall": 0.7272727272727273,
+      "precision": 0.0004929143561306223,
+      "support": 11,
+      "correct": 8
+     }
+    },
+    "confusion": [
+     [
+      192760,
+      386,
+      261,
+      6,
+      17,
+      0,
+      6,
+      7,
+      16205
+     ],
+     [
+      7,
+      253,
+      0,
+      0,
+      35511,
+      0,
+      0,
+      0,
+      16
+     ],
+     [
+      2,
+      0,
+      58,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      21,
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      23,
+      0,
+      0,
+      0,
+      125542,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      50,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      155,
+      0,
+      0,
+      0,
+      0,
+      0,
+      731,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26387,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      8
+     ]
+    ]
+   }
+  }
+ }
+}

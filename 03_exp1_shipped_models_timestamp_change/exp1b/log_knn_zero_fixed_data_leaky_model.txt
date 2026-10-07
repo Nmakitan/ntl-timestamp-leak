@@ -1,0 +1,7 @@
+knn zero_fixed_data_leaky_model 50/6854 11s rss=0.82GB
+knn zero_fixed_data_leaky_model 1050/6854 236s rss=0.82GB
+knn zero_fixed_data_leaky_model 2050/6854 462s rss=0.82GB
+knn zero_fixed_data_leaky_model 3050/6854 689s rss=0.82GB
+knn zero_fixed_data_leaky_model 4050/6854 917s rss=0.82GB
+knn zero_fixed_data_leaky_model 5050/6854 1142s rss=0.82GB
+knn zero_fixed_data_leaky_model 6050/6854 1368s rss=0.82GB

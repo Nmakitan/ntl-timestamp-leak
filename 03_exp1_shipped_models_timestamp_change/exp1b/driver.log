@@ -1,0 +1,37 @@
+21:56:32 start knn baseline
+21:56:32 start ensemble baseline
+23:13:37 exit ('knn', 'baseline') rc 0
+23:13:42 start knn plus_8y
+23:14:32 exit ('ensemble', 'baseline') rc 0
+23:14:37 start ensemble plus_8y
+23:41:47 exit ('knn', 'plus_8y') rc 0
+23:41:52 start knn plus_1d
+23:42:52 exit ('ensemble', 'plus_8y') rc 0
+23:42:57 start ensemble plus_1d
+00:07:52 exit ('knn', 'plus_1d') rc 0
+00:07:57 start knn zero_fixed_data_leaky_model
+00:09:12 exit ('ensemble', 'plus_1d') rc 0
+00:09:17 start ensemble zero_fixed_data_leaky_model
+00:33:52 exit ('knn', 'zero_fixed_data_leaky_model') rc 0
+00:33:57 start knn shuffle_s0
+00:35:32 exit ('ensemble', 'zero_fixed_data_leaky_model') rc 0
+00:35:37 start ensemble shuffle_s0
+01:00:02 exit ('knn', 'shuffle_s0') rc 0
+01:00:07 start knn shuffle_s1
+01:01:32 exit ('ensemble', 'shuffle_s0') rc 0
+01:01:37 start ensemble shuffle_s1
+01:26:27 exit ('knn', 'shuffle_s1') rc 0
+01:26:32 start knn shuffle_s2
+01:27:42 exit ('ensemble', 'shuffle_s1') rc 0
+01:27:47 start ensemble shuffle_s2
+01:52:37 exit ('knn', 'shuffle_s2') rc 0
+01:52:42 start knn shuffle_s3
+01:53:57 exit ('ensemble', 'shuffle_s2') rc 0
+01:54:02 start ensemble shuffle_s3
+02:19:27 exit ('knn', 'shuffle_s3') rc 0
+02:19:32 start knn shuffle_s4
+02:20:47 exit ('ensemble', 'shuffle_s3') rc 0
+02:20:52 start ensemble shuffle_s4
+02:45:37 exit ('knn', 'shuffle_s4') rc 0
+02:46:37 exit ('ensemble', 'shuffle_s4') rc 0
+ALL DONE

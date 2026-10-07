@@ -1,0 +1,42 @@
+4. Materials and Methods
+This section describes the datesets, machine learning algorithms and models, proceduers and other elements of the experimental methodology used in this work. 
+    • 4.1 Datasets 
+
+
+
+
+
+
+
+
+
+
+
+Dataset
+Classes
+Features
+BCCC-CSE-CIC-IDS2018
+9 (Benign + 8 attacks)
+313 (30 IAT)
+BCCC-CIC-IDS-2017
+14 (Benign + 13 attacks)
+114 (15 IAT)
+BCCC-cPacket-Cloud-DDoS-2024
+26 subtypes (17 attack, 8 benign, Suspicious)
+313 (30 IAT)
+
+
+As the main issue was found to be with the feature extraction and network flow analisis tool NTLFlowlyzer, the tested datasets needed to be created by using this tool. Thus, the BCCC family of datasets was chosen. Out of the many available options three were deemed most appropriate. Namely the BCCC-CSE-CIC-IDS2018, BCCC-CIC-IDS2017 and the most recent but containing the least data the BCCC-cPacket-Cloud-DdoS-2024. The reported issue was found to be present in all three of the datasets. 
+
+    • 4.2 Leakage Prevalence Analysis
+      
+      The Leakage Prevalence Analysis was run on the unmodified published CSV files of each dataset(BCCC-CSE-CIC-IDS2018, BCCC-CIC-IDS2017 and BCCC-cPacket-Cloud-DdoS-2024). An IAT value was classified as leaked if the value exceeded 10⁹ seconds. A row was classified as leaked if at least one of its IAT values was leaked as rows contained multiple values potentially. This threshold separates the two kinds of value with a wide margin on both sides. Unix time passed 10⁹ seconds in September 2001, so every capture timestamp in these datasets (2017–2023) lies between about 1.5 × 10⁹ and 1.7 × 10⁹. A legitimate inter-arrival time, by contrast, is a gap between two packets of the same flow. As 10⁹ seconds corresponds to more than 31 years, that is far beyond any possible TCP flow duration. The threshold was validated by confirming that leaked values fall within a narrow epoch band matching each dataset's capture period, and that no legitimate IAT value lies between 10⁶ and 10⁹ seconds. For each row, the location of leaked values was checked against the one-packet rule. The rule established was that forward IAT features leak if and only if the forward direction contains exactly one packet, while backward features if and only if the backward direction contains exactly one packet. Combined features leak if and only if the flow contains exactly one packet. Every deviation from this rule was counted as a violation. Each leaked value was further compared with the flow's recorded start time, converted to UTC, to confirm that it encodes the true capture time. Leak rates were computed per dataset, per class and per capture file. Finally, leaked rows were classified by flow shape (packet counts, TCP flags and payload presence) to determine whether they represent attack traffic or connection fragments. The leakage prevalence analysis was implemented as a set of Python scripts that read each published CSV file, apply the leak criterion and the one-packet rule to every row, and write per-class, per-file and flow-shape summaries. The scripts, together with the minimal reproducer and all leakage prevalence analysis outputs, are available at [repository URL, DOI].
+    • 4.3 Data Preparation and Splits 
+      In order to achieve an appropriate accuracy of results 3 types of splits for the data were used. Splitting is a standard technique in the fields of machine learning and data science. It relies on using one “split” of the dataset to train the models on while “holding out” the other chunk of the dataset in order to use it for testing. This ensures the model is not tested using previously seen data. The first split that was used was the random split. For the random split, each dataset was partitioned into 75% training and 25% test data, stratified by class, using a fixed random seed. Because assignment ignores capture time, training and test flows share the same capture windows. A temporal split was used as the second type of split, that had a test set that consisted of the latest 25% of flows. Within each combination of capture file and class, ordered by flow start time. The earlier 75% formed the training set. For BCCC-CSE-CIC-IDS2018, the temporal split of the original training pipeline was used, including its per-class caps. Because every test flow was captured after the training flows of its class and file, learned time ranges do not directly cover the test data.
+
+     All models and conditions were evaluated on identical partitions in both cases.
+    Finally, a third split method was used. Leave-one-day-out is an innovative splitting method used to check how leaving out a day of training data, which is especially applicable to IDS datasets that are usually clustered in to capture days. For this split, the model was tested on also detecting leaked rows from the excluded day. 
+
+    • 4.4 Experimental Conditions 
+    • 4.5 Models and Configurations 
+    • 4.6 Evaluation Metrics and Statistical Analysis 

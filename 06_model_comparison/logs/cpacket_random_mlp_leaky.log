@@ -1,0 +1,1 @@
+cpacket random mlp leaky: leaky acc=0.8228 leaked=0.8805 | leaky_plus8y acc=0.8221 leaked=0.8795 | leaky_zero acc=0.7584 leaked=0.7821 | fit 234s, warnings 0

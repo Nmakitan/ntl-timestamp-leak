@@ -1,0 +1,15 @@
+                                   0                 1
+src_ip                 18.218.115.60      172.31.69.28
+src_port                       59823                80
+dst_ip                  172.31.69.28     18.218.115.60
+dst_port                          80             59823
+packets_count                     12                 1
+fwd_packets_count                  7                 0
+bwd_packets_count                  5                 1
+packet_IAT_max              4.949367 1519330475.230912
+packet_IAT_min              0.000021 1519330475.230912
+packet_IAT_total            5.061565 1519330475.230912
+bwd_packets_IAT_max         5.005136 1519330475.230912
+bwd_packets_IAT_min         0.000790 1519330475.230912
+bwd_packets_IAT_total       5.061020 1519330475.230912
+label                  SQL_Injection     SQL_Injection

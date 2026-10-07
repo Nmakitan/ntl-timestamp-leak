@@ -1,0 +1,11 @@
+baseline scored in 4s
+baseline   acc=0.8919 mF1=0.7560 | leaked acc=0.6736 mF1=0.2995 | changed=0
+plus_8y    acc=0.8749 mF1=0.7916 | leaked acc=0.6220 mF1=0.2074 | changed=22226
+plus_1d    acc=0.8381 mF1=0.7346 | leaked acc=0.5110 mF1=0.2065 | changed=121075
+shuffle_s0 acc=0.8763 mF1=0.7336 | leaked acc=0.6265 mF1=0.2193 | changed=32566
+shuffle_s1 acc=0.8763 mF1=0.7344 | leaked acc=0.6265 mF1=0.2192 | changed=32520
+shuffle_s2 acc=0.8763 mF1=0.7340 | leaked acc=0.6265 mF1=0.2193 | changed=32619
+shuffle_s3 acc=0.8762 mF1=0.7336 | leaked acc=0.6262 mF1=0.2191 | changed=32451
+shuffle_s4 acc=0.8763 mF1=0.7343 | leaked acc=0.6263 mF1=0.2191 | changed=32475
+zero_fixed_data_leaky_model acc=0.8749 mF1=0.7916 | leaked acc=0.6220 mF1=0.2074 | changed=22226
+ALL DONE

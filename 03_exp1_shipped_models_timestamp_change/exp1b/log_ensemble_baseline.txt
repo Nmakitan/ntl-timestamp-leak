@@ -1,0 +1,22 @@
+[0;93m2026-10-01 21:56:35.264175973 [W:onnxruntime:, graph.cc:5566 CleanUnusedInitializersAndNodeArgs] Removing initializer 'classes_ind'. It is not used by any node and should be removed from the model.[m
+ensemble baseline 50/20001 12s rss=0.90GB
+ensemble baseline 1050/20001 245s rss=0.90GB
+ensemble baseline 2050/20001 479s rss=0.90GB
+ensemble baseline 3050/20001 712s rss=0.90GB
+ensemble baseline 4050/20001 943s rss=0.90GB
+ensemble baseline 5050/20001 1174s rss=0.90GB
+ensemble baseline 6050/20001 1405s rss=0.90GB
+ensemble baseline 7050/20001 1636s rss=0.90GB
+ensemble baseline 8050/20001 1867s rss=0.90GB
+ensemble baseline 9050/20001 2098s rss=0.90GB
+ensemble baseline 10050/20001 2331s rss=0.90GB
+ensemble baseline 11050/20001 2566s rss=0.90GB
+ensemble baseline 12050/20001 2801s rss=0.90GB
+ensemble baseline 13050/20001 3036s rss=0.90GB
+ensemble baseline 14050/20001 3272s rss=0.90GB
+ensemble baseline 15050/20001 3508s rss=0.90GB
+ensemble baseline 16050/20001 3743s rss=0.90GB
+ensemble baseline 17050/20001 3979s rss=0.90GB
+ensemble baseline 18050/20001 4214s rss=0.90GB
+ensemble baseline 19050/20001 4449s rss=0.90GB
+ensemble baseline 20050/20001 4672s rss=0.90GB

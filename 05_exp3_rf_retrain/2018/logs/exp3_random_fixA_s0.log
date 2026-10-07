@@ -1,0 +1,3 @@
+random_fixA_s0: train 3261673 test 1087225 dropped {}
+random_fixA_s0: fit 1143s, rss peak 6.54GB
+random_fixA_s0: acc=0.9503 mF1=0.7924 | leaked acc=0.8645 | thresholds>1e9: 0

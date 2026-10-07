@@ -1,0 +1,1 @@
+{"model": "knn", "cond": "zero_fixed_data_leaky_model", "rows": 6854, "seconds": 1550.8, "peak_rss_gb": 1.520616, "rss_samples_gb": [0.816328704, 0.81639424, 0.816406528, 0.816406528, 0.816410624, 0.816418816, 0.816541696]}

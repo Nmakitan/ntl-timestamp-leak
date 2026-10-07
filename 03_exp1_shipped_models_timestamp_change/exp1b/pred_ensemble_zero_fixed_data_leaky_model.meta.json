@@ -1,0 +1,1 @@
+{"model": "ensemble", "cond": "zero_fixed_data_leaky_model", "rows": 6854, "seconds": 1572.0, "peak_rss_gb": 1.555732, "rss_samples_gb": [0.872628224, 0.872628224, 0.872636416, 0.872640512, 0.872644608, 0.8726528, 0.8726528]}

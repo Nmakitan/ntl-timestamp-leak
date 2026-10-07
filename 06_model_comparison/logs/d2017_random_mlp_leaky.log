@@ -1,0 +1,1 @@
+d2017 random mlp leaky: leaky acc=0.9470 leaked=0.8694 | leaky_plus8y acc=0.9470 leaked=0.8695 | leaky_zero acc=0.8716 leaked=0.6738 | fit 122s, warnings 0

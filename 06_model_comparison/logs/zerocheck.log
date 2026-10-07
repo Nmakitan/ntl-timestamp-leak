@@ -1,0 +1,59 @@
+
+===== cpacket: 30 IAT columns of 313 features
+IAT cols: ['packets_IAT_mean', 'packet_IAT_std', 'packet_IAT_max', 'packet_IAT_min', 'packet_IAT_total', 'packets_IAT_median', 'packets_IAT_skewness', 'packets_IAT_cov', 'packets_IAT_mode', 'packets_IAT_variance', 'fwd_packets_IAT_mean', 'fwd_packets_IAT_std', 'fwd_packets_IAT_max', 'fwd_packets_IAT_min', 'fwd_packets_IAT_total', 'fwd_packets_IAT_median', 'fwd_packets_IAT_skewness', 'fwd_packets_IAT_cov', 'fwd_packets_IAT_mode', 'fwd_packets_IAT_variance', 'bwd_packets_IAT_mean', 'bwd_packets_IAT_std', 'bwd_packets_IAT_max', 'bwd_packets_IAT_min', 'bwd_packets_IAT_total', 'bwd_packets_IAT_median', 'bwd_packets_IAT_skewness', 'bwd_packets_IAT_cov', 'bwd_packets_IAT_mode', 'bwd_packets_IAT_variance']
+leaked cells: n=3911982 min=1.703e+09 p1=1.703e+09 max=1.703e+09
+non-leaked nonzero cells: p50=0.1119 p99=59.94 p99.99=3601 max=2.882e+04
+non-leaked cells in (1e6,1e9]: 0  in (1e8,1e9]: 0
+class                                         n rowLeak%  legit0% (cells, nonleaked rows)  rows all-IAT=0 (nonleaked)%
+Attack / Attack-Killall-v2                 4525     24.4                             22.2                          0.0
+Attack / Attack-Killer-TCP                 4691     28.2                             22.0                          0.0
+Attack / Attack-TCP-BYPass-V1            103776     95.9                             19.6                          0.0
+Attack / Attack-TCP-Control                4308     25.3                             17.5                          0.0
+Attack / Attack-TCP-Flag-ACK               8012     16.1                             12.4                          0.0
+Attack / Attack-TCP-Flag-ACK-PSH           5611     21.9                             19.5                          0.0
+Attack / Attack-TCP-Flag-MIX               5562     23.6                             17.5                          0.0
+Attack / Attack-TCP-Flag-OSYN               650     82.0                             15.8                          0.0
+Attack / Attack-TCP-Flag-OSYNP              668     83.4                             12.0                          0.0
+Attack / Attack-TCP-Flag-RST-ACK           1084     42.1                              4.7                          0.0
+Attack / Attack-TCP-Flag-SYN               5884     22.7                             18.7                          0.0
+Attack / Attack-TCP-Flag-SYN-ACK           6153     20.0                             16.4                          0.0
+Attack / Attack-TCP-Flag-SYN-TFO           2723     22.4                              2.7                          0.0
+Attack / Attack-TCP-Flag-SYN-TIME          1020     67.5                             14.3                          0.0
+Attack / Attack-TCP-IGMP                   5438     22.5                             19.3                          0.0
+Attack / Attack-TCP-SYN                    5215     20.8                             19.3                          0.0
+Attack / Attack-TCP-Valid-SYN              6032     17.6                             19.3                          0.0
+Benign / Benign                          226713     81.0                             56.3                          0.2
+Benign / Benign-Email-Receive              1046     66.8                             35.5                          0.0
+Benign / Benign-Email-Send                 1454     59.6                             27.4                          0.0
+Benign / Benign-FTP                         362     64.9                             30.5                          0.0
+Benign / Benign-SSH                        2239     47.6                             20.4                          0.0
+Benign / Benign-Systemic                  36055     17.1                              8.2                          0.0
+Benign / Benign-Telnet                     3576     84.0                             65.5                          0.7
+Benign / Benign-Web_Browsing_HTTP-S       38454     54.2                             19.7                          0.1
+Suspicious / Suspicious                   44329     26.3                             11.7                          0.0
+majority baseline: acc=0.431 macroF1=0.023 meanAttRecall=0.000
+row leaked flag (1 bit)                    acc=0.202 macroF1=0.020 meanAttRecall=0.105
+per-col leaked mask                        acc=0.206 macroF1=0.029 meanAttRecall=0.126
+zero mask, raw data (legit zeros only)     acc=0.320 macroF1=0.108 meanAttRecall=0.143
+zero mask, after fixA (legit + leaked)     acc=0.330 macroF1=0.112 meanAttRecall=0.156
+
+===== d2018: 30 IAT columns of 313 features
+IAT cols: ['packets_IAT_mean', 'packet_IAT_std', 'packet_IAT_max', 'packet_IAT_min', 'packet_IAT_total', 'packets_IAT_median', 'packets_IAT_skewness', 'packets_IAT_cov', 'packets_IAT_mode', 'packets_IAT_variance', 'fwd_packets_IAT_mean', 'fwd_packets_IAT_std', 'fwd_packets_IAT_max', 'fwd_packets_IAT_min', 'fwd_packets_IAT_total', 'fwd_packets_IAT_median', 'fwd_packets_IAT_skewness', 'fwd_packets_IAT_cov', 'fwd_packets_IAT_mode', 'fwd_packets_IAT_variance', 'bwd_packets_IAT_mean', 'bwd_packets_IAT_std', 'bwd_packets_IAT_max', 'bwd_packets_IAT_min', 'bwd_packets_IAT_total', 'bwd_packets_IAT_median', 'bwd_packets_IAT_skewness', 'bwd_packets_IAT_cov', 'bwd_packets_IAT_mode', 'bwd_packets_IAT_variance']
+leaked cells: n=2611800 min=1.519e+09 p1=1.519e+09 max=1.52e+09
+non-leaked nonzero cells: p50=0.2956 p99=174.7 p99.99=1671 max=3.242e+04
+non-leaked cells in (1e6,1e9]: 0  in (1e8,1e9]: 0
+class                                         n rowLeak%  legit0% (cells, nonleaked rows)  rows all-IAT=0 (nonleaked)%
+Benign                                   323943     35.6                              9.2                          0.0
+Bot                                       39437     50.1                             16.9                          0.0
+Brute_Force_Web                             402     50.2                              5.3                          0.0
+Brute_Force_XSS                             174     53.4                              2.9                          0.0
+DDoS_HOIC                                137940     49.8                             12.5                          0.0
+DDoS_LOIC_HTTP                            39909      0.1                              9.0                          0.0
+DoS_HULK                                  43566      1.1                              6.2                          0.0
+DoS_SlowHTTP                              14549    100.0                              nan                          nan
+SQL_Injection                                80     51.2                              7.8                          0.0
+majority baseline: acc=0.540 macroF1=0.078 meanAttRecall=0.000
+row leaked flag (1 bit)                    acc=0.091 macroF1=0.035 meanAttRecall=0.250
+per-col leaked mask                        acc=0.096 macroF1=0.107 meanAttRecall=0.321
+zero mask, raw data (legit zeros only)     acc=0.348 macroF1=0.333 meanAttRecall=0.597
+zero mask, after fixA (legit + leaked)     acc=0.349 macroF1=0.334 meanAttRecall=0.573

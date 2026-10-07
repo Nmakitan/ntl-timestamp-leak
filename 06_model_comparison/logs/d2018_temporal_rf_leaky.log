@@ -1,0 +1,1 @@
+d2018 temporal rf leaky: leaky acc=0.8918 leaked=0.6733 | leaky_plus8y acc=0.8748 leaked=0.6220 | leaky_zero acc=0.8748 leaked=0.6220 | fit 146s, warnings 0

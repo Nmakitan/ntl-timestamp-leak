@@ -1,0 +1,352 @@
+{
+ "dataset": "d2018",
+ "split": "random",
+ "model": "lr",
+ "variant": "fixA",
+ "params": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('logisticregression',\n                 LogisticRegression(class_weight='balanced', max_iter=1000))])",
+ "n_train": 600000,
+ "n_test": 1087225,
+ "n_features": 313,
+ "fit_seconds": 667.9,
+ "predict_seconds": 3.5,
+ "peak_rss_gb_self": 2.680488,
+ "warnings": [
+  "ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+ ],
+ "n_warnings": 1,
+ "conditions": {
+  "fixA": {
+   "all": {
+    "n": 1087225,
+    "accuracy": 0.7853139874451011,
+    "macro_f1": 0.6179930802621388,
+    "mean_attack_recall": 0.839766214599831,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.8173044845827575,
+      "precision": 0.9994879608352483,
+      "support": 587524,
+      "correct": 480186
+     },
+     "Bot": {
+      "recall": 0.9966305487591751,
+      "precision": 0.35616712134384587,
+      "support": 71525,
+      "correct": 71284
+     },
+     "Brute_Force_Web": {
+      "recall": 0.5298507462686567,
+      "precision": 0.5259259259259259,
+      "support": 134,
+      "correct": 71
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.9655172413793104,
+      "precision": 0.009890498057223597,
+      "support": 58,
+      "correct": 56
+     },
+     "DDoS_HOIC": {
+      "recall": 0.4981812803786135,
+      "precision": 0.7324975903331218,
+      "support": 250176,
+      "correct": 124633
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.9992815893454173,
+      "precision": 0.9999585251544938,
+      "support": 72382,
+      "correct": 72330
+     },
+     "DoS_HULK": {
+      "recall": 0.9978990798982446,
+      "precision": 0.9964739782119657,
+      "support": 79013,
+      "correct": 78847
+     },
+     "DoS_SlowHTTP": {
+      "recall": 1.0,
+      "precision": 0.9997347882094415,
+      "support": 26387,
+      "correct": 26387
+     },
+     "SQL_Injection": {
+      "recall": 0.7307692307692307,
+      "precision": 0.0003594876355173784,
+      "support": 26,
+      "correct": 19
+     }
+    },
+    "confusion": [
+     [
+      480186,
+      3304,
+      63,
+      5356,
+      45515,
+      3,
+      277,
+      7,
+      52813
+     ],
+     [
+      29,
+      71284,
+      0,
+      212,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      11,
+      71,
+      32,
+      0,
+      0,
+      0,
+      0,
+      20
+     ],
+     [
+      0,
+      1,
+      0,
+      56,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      125536,
+      0,
+      6,
+      124633,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      50,
+      0,
+      0,
+      0,
+      0,
+      72330,
+      2,
+      0,
+      0
+     ],
+     [
+      166,
+      0,
+      0,
+      0,
+      0,
+      0,
+      78847,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26387,
+      0
+     ],
+     [
+      0,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      19
+     ]
+    ]
+   },
+   "leaked_rows": {
+    "n": 398418,
+    "accuracy": 0.41548574612592803,
+    "macro_f1": 0.3126117338913691,
+    "mean_attack_recall": 0.5284634997506843,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.49044112035411735,
+      "precision": 0.9977680737506065,
+      "support": 209648,
+      "correct": 102820
+     },
+     "Bot": {
+      "recall": 0.9933774834437086,
+      "precision": 0.21630666261028295,
+      "support": 35787,
+      "correct": 35550
+     },
+     "Brute_Force_Web": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 62,
+      "correct": 0
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.9545454545454546,
+      "precision": 0.0037393162393162395,
+      "support": 22,
+      "correct": 21
+     },
+     "DDoS_HOIC": {
+      "recall": 0.00018317206227850118,
+      "precision": 0.0005055500604462028,
+      "support": 125565,
+      "correct": 23
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 50,
+      "correct": 0
+     },
+     "DoS_HULK": {
+      "recall": 0.8250564334085779,
+      "precision": 0.7630480167014614,
+      "support": 886,
+      "correct": 731
+     },
+     "DoS_SlowHTTP": {
+      "recall": 1.0,
+      "precision": 0.9997347882094415,
+      "support": 26387,
+      "correct": 26387
+     },
+     "SQL_Injection": {
+      "recall": 0.45454545454545453,
+      "precision": 9.514204707628489e-05,
+      "support": 11,
+      "correct": 5
+     }
+    },
+    "confusion": [
+     [
+      102820,
+      3246,
+      0,
+      5345,
+      45472,
+      2,
+      227,
+      7,
+      52529
+     ],
+     [
+      25,
+      35550,
+      0,
+      212,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      11,
+      0,
+      32,
+      0,
+      0,
+      0,
+      0,
+      19
+     ],
+     [
+      0,
+      1,
+      0,
+      21,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      125536,
+      0,
+      6,
+      23,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      50,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      155,
+      0,
+      0,
+      0,
+      0,
+      0,
+      731,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26387,
+      0
+     ],
+     [
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5
+     ]
+    ]
+   }
+  }
+ },
+ "n_iter": [
+  1000
+ ]
+}

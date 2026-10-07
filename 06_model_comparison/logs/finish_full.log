@@ -1,0 +1,13 @@
+2026-10-03 17:22:06 finishing full-train tier
+d2018 random rffull: 5 conditions, 85 tuples
+d2018 random xgbfull: 5 conditions, 69 tuples
+d2018 temporal rffull: 5 conditions, 65 tuples
+d2018 temporal xgbfull: 5 conditions, 70 tuples
+2652 rows -> /home/nik/Desktop/ntl_models/results/BOOTSTRAP_CI.csv
+132 runs, 7472 rows -> /home/nik/Desktop/ntl_models/results/ALL_RUNS_pooled.csv
+machines: {'pc': 88, 'laptop': 44, 'unknown': 0}
+summary regenerated
+/home/nik/Desktop/NTL_timestamp_leak_MASTER.md: 216 KB, 2,545 lines
+/home/nik/Desktop/NTL_all_metrics.md: 234 KB, 2,534 lines, section-12 runs: 132
+/home/nik/Desktop/NTL_leak_research: 1001 files copied (87.0 MB), 48 large files symlinked
+2026-10-03 17:22:24 done

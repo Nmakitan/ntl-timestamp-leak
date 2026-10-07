@@ -1,0 +1,17 @@
+{
+ "dataset": "d2018",
+ "split": "temporal",
+ "n": 600000,
+ "train_rows": 3261675,
+ "class_counts": {
+  "Benign": 323943,
+  "Bot": 39437,
+  "Brute_Force_Web": 402,
+  "Brute_Force_XSS": 174,
+  "DDoS_HOIC": 137940,
+  "DDoS_LOIC_HTTP": 39909,
+  "DoS_HULK": 43566,
+  "DoS_SlowHTTP": 14549,
+  "SQL_Injection": 80
+ }
+}

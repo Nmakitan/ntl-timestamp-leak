@@ -1,0 +1,357 @@
+{
+ "experiment": 2,
+ "split": "random",
+ "model": "most_frequent",
+ "params": {
+  "constant": null,
+  "random_state": null,
+  "strategy": "most_frequent"
+ },
+ "feature": "t (smallest leaked IAT, 0 if none)",
+ "n_train": 3261673,
+ "n_test": 1087225,
+ "fit_seconds": 0.39,
+ "all": {
+  "n": 1087225,
+  "accuracy": 0.5403886040148084,
+  "macro_f1": 0.07795848147327683,
+  "per_class": {
+   "Benign": {
+    "precision": 0.5403886040148084,
+    "recall": 1.0,
+    "f1": 0.7016263332594914,
+    "support": 587524,
+    "correct": 587524
+   },
+   "Bot": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 71525,
+    "correct": 0
+   },
+   "Brute_Force_Web": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 134,
+    "correct": 0
+   },
+   "Brute_Force_XSS": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 58,
+    "correct": 0
+   },
+   "DDoS_HOIC": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 250176,
+    "correct": 0
+   },
+   "DDoS_LOIC_HTTP": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 72382,
+    "correct": 0
+   },
+   "DoS_HULK": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 79013,
+    "correct": 0
+   },
+   "DoS_SlowHTTP": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 26387,
+    "correct": 0
+   },
+   "SQL_Injection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 26,
+    "correct": 0
+   }
+  },
+  "confusion": [
+   [
+    587524,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    71525,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    134,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    58,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    250176,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    72382,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    79013,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    26387,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    26,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "leaked_rows": {
+  "n": 398418,
+  "accuracy": 0.5262011254511594,
+  "macro_f1": 0.07661741397224059,
+  "per_class": {
+   "Benign": {
+    "precision": 0.5262011254511594,
+    "recall": 1.0,
+    "f1": 0.6895567257501652,
+    "support": 209648,
+    "correct": 209648
+   },
+   "Bot": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 35787,
+    "correct": 0
+   },
+   "Brute_Force_Web": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 62,
+    "correct": 0
+   },
+   "Brute_Force_XSS": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 22,
+    "correct": 0
+   },
+   "DDoS_HOIC": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 125565,
+    "correct": 0
+   },
+   "DDoS_LOIC_HTTP": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 50,
+    "correct": 0
+   },
+   "DoS_HULK": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 886,
+    "correct": 0
+   },
+   "DoS_SlowHTTP": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 26387,
+    "correct": 0
+   },
+   "SQL_Injection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 11,
+    "correct": 0
+   }
+  },
+  "confusion": [
+   [
+    209648,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    35787,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    62,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    22,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    125565,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    50,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    886,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    26387,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    11,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "worker_peak_rss_gb": 0.50754
+}

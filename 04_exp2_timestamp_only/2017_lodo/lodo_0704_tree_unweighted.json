@@ -1,0 +1,627 @@
+{
+ "dataset": "BCCC-CIC-IDS-2017",
+ "class_mode": "label",
+ "split": "lodo_0704",
+ "model": "tree_unweighted",
+ "n_train": 2026596,
+ "n_test": 411456,
+ "seconds": 0.73,
+ "all": {
+  "n": 411456,
+  "accuracy": 0.9623775081661222,
+  "macro_f1": 0.07005915049192997,
+  "per_class": {
+   "Benign": {
+    "precision": 0.9623775081661222,
+    "recall": 1.0,
+    "support": 395976
+   },
+   "Botnet_ARES": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DDoS_LOIT": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DoS_GoldenEye": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DoS_Hulk": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DoS_Slowhttptest": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DoS_Slowloris": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "FTP-Patator": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 9531
+   },
+   "Heartbleed": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "Port_Scan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "SSH-Patator": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 5949
+   },
+   "Web_Brute_Force": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "Web_SQL_Injection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "Web_XSS": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   }
+  },
+  "confusion": [
+   [
+    395976,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    9531,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    5949,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "leaked_rows": {
+  "n": 145986,
+  "accuracy": 0.9418985382159933,
+  "macro_f1": 0.0692914338122282,
+  "per_class": {
+   "Benign": {
+    "precision": 0.9418985382159933,
+    "recall": 1.0,
+    "support": 137504
+   },
+   "Botnet_ARES": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DDoS_LOIT": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DoS_GoldenEye": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DoS_Hulk": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DoS_Slowhttptest": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "DoS_Slowloris": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "FTP-Patator": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 5527
+   },
+   "Heartbleed": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "Port_Scan": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "SSH-Patator": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 2955
+   },
+   "Web_Brute_Force": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "Web_SQL_Injection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   },
+   "Web_XSS": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 0
+   }
+  },
+  "confusion": [
+   [
+    137504,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    5527,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    2955,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "binary_all": {
+  "n_attack": 15480,
+  "n_benign": 395976,
+  "detect": 0.0,
+  "fpr": 0.0
+ },
+ "binary_leaked": {
+  "n_attack": 8482,
+  "n_benign": 137504,
+  "detect": 0.0,
+  "fpr": 0.0
+ }
+}

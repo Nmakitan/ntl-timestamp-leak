@@ -1,0 +1,7 @@
+knn plus_8y 50/6854 12s rss=0.82GB
+knn plus_8y 1050/6854 237s rss=0.82GB
+knn plus_8y 2050/6854 484s rss=0.82GB
+knn plus_8y 3050/6854 735s rss=0.82GB
+knn plus_8y 4050/6854 1005s rss=0.82GB
+knn plus_8y 5050/6854 1266s rss=0.81GB
+knn plus_8y 6050/6854 1496s rss=0.81GB

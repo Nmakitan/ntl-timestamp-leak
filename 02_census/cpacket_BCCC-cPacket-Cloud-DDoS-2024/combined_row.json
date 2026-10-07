@@ -1,0 +1,11 @@
+{
+ "dataset": "BCCC-cPacket-Cloud-DDoS-2024",
+ "ntlflowlyzer": "yes",
+ "columns": 324,
+ "rows": 700774,
+ "leaked_rows": 458427,
+ "leaked_%": 65.42,
+ "rule_violations": 0,
+ "timestamp_offset_h": 5,
+ "on_capture_days": "100.00% of leaked rows"
+}

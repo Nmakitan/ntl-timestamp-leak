@@ -1,0 +1,10 @@
+test verify OK: 1087223 rows identical (141s)
+train rows: 3261675
+  500000/3261675 368s
+  1000000/3261675 416s
+  1500000/3261675 464s
+  2000000/3261675 517s
+  2500000/3261675 566s
+  3000000/3261675 613s
+class counts: {'Benign': 1762570, 'Bot': 214574, 'Brute_Force_Web': 402, 'Brute_Force_XSS': 174, 'DDoS_HOIC': 750527, 'DDoS_LOIC_HTTP': 217145, 'DoS_HULK': 237040, 'DoS_SlowHTTP': 79163, 'SQL_Injection': 80}
+BUILD OK 3261675 rows (645s)

@@ -1,0 +1,1 @@
+cpacket temporal gnb leaky: leaky acc=0.2066 leaked=0.2952 | leaky_plus8y acc=0.2066 leaked=0.2952 | leaky_zero acc=0.0183 leaked=0.0077 | fit 2s, warnings 0

@@ -1,0 +1,145 @@
+2026-10-02 15:29:50 [nik-G5-5587] === tier1 ===
+2026-10-02 15:29:50 [nik-G5-5587] start d2017_random_lr_leaky
+2026-10-02 15:36:03 [nik-G5-5587] end d2017_random_lr_leaky rc=0 peak_rss_kb=2125200 warnings=1
+2026-10-02 15:36:03 [nik-G5-5587] start d2017_random_lr_fixA
+2026-10-02 15:41:15 [nik-G5-5587] end d2017_random_lr_fixA rc=0 peak_rss_kb=2125756 warnings=0
+2026-10-02 15:41:15 [nik-G5-5587] start d2017_temporal_lr_leaky
+2026-10-02 15:47:39 [nik-G5-5587] end d2017_temporal_lr_leaky rc=0 peak_rss_kb=1974832 warnings=0
+2026-10-02 15:47:39 [nik-G5-5587] start d2017_temporal_lr_fixA
+2026-10-02 15:53:15 [nik-G5-5587] end d2017_temporal_lr_fixA rc=0 peak_rss_kb=1974888 warnings=0
+2026-10-02 15:53:15 [nik-G5-5587] start cpacket_random_lr_leaky
+2026-10-02 16:02:39 [nik-G5-5587] end cpacket_random_lr_leaky rc=0 peak_rss_kb=3093824 warnings=1
+2026-10-02 16:02:39 [nik-G5-5587] start cpacket_random_lr_fixA
+2026-10-02 16:12:11 [nik-G5-5587] end cpacket_random_lr_fixA rc=0 peak_rss_kb=3093188 warnings=1
+2026-10-02 16:12:11 [nik-G5-5587] start cpacket_temporal_lr_leaky
+2026-10-02 16:21:39 [nik-G5-5587] end cpacket_temporal_lr_leaky rc=0 peak_rss_kb=3009176 warnings=1
+2026-10-02 16:21:39 [nik-G5-5587] start cpacket_temporal_lr_fixA
+2026-10-02 16:31:01 [nik-G5-5587] end cpacket_temporal_lr_fixA rc=0 peak_rss_kb=3009076 warnings=1
+2026-10-02 16:31:01 [nik-G5-5587] start d2017_random_xgb_leaky
+2026-10-02 16:34:22 [nik-G5-5587] end d2017_random_xgb_leaky rc=0 peak_rss_kb=2047264 warnings=0
+2026-10-02 16:34:22 [nik-G5-5587] start d2017_random_xgb_fixA
+2026-10-02 16:37:28 [nik-G5-5587] end d2017_random_xgb_fixA rc=0 peak_rss_kb=2048664 warnings=0
+2026-10-02 16:37:28 [nik-G5-5587] start d2017_temporal_xgb_leaky
+2026-10-02 16:40:33 [nik-G5-5587] end d2017_temporal_xgb_leaky rc=0 peak_rss_kb=1900740 warnings=0
+2026-10-02 16:40:33 [nik-G5-5587] start d2017_temporal_xgb_fixA
+2026-10-02 16:43:36 [nik-G5-5587] end d2017_temporal_xgb_fixA rc=0 peak_rss_kb=1896764 warnings=0
+2026-10-02 16:43:36 [nik-G5-5587] start cpacket_random_xgb_leaky
+2026-10-02 16:56:29 [nik-G5-5587] end cpacket_random_xgb_leaky rc=0 peak_rss_kb=2759828 warnings=0
+2026-10-02 16:56:29 [nik-G5-5587] start cpacket_random_xgb_fixA
+2026-10-02 17:09:20 [nik-G5-5587] end cpacket_random_xgb_fixA rc=0 peak_rss_kb=2784032 warnings=0
+2026-10-02 17:09:20 [nik-G5-5587] start cpacket_temporal_xgb_leaky
+2026-10-02 17:22:38 [nik-G5-5587] end cpacket_temporal_xgb_leaky rc=0 peak_rss_kb=2684176 warnings=0
+2026-10-02 17:22:38 [nik-G5-5587] start cpacket_temporal_xgb_fixA
+2026-10-02 17:35:29 [nik-G5-5587] end cpacket_temporal_xgb_fixA rc=0 peak_rss_kb=2710696 warnings=0
+2026-10-02 17:35:31 [nik-G5-5587] tier1 complete
+2026-10-02 17:35:31 [nik-G5-5587] ALL TIERS DONE (tier1; datasets: d2017 cpacket; models: lr xgb)
+2026-10-02 17:41:13 [nik-G5-5587] === tier2 ===
+2026-10-02 17:41:13 [nik-G5-5587] start d2017_random_linsvc_leaky
+2026-10-02 19:38:07 [nik-G5-5587] end d2017_random_linsvc_leaky rc=143 peak_rss_kb=3440208 warnings=0
+2026-10-02 19:38:07 [nik-G5-5587] FAILED d2017_random_linsvc_leaky (see results/logs/d2017_random_linsvc_leaky.log)
+2026-10-02 19:38:07 [nik-G5-5587] start d2017_random_mlp_leaky
+2026-10-02 19:40:21 [nik-G5-5587] end d2017_random_mlp_leaky rc=0 peak_rss_kb=2153632 warnings=0
+2026-10-02 19:40:21 [nik-G5-5587] start d2017_random_mlp_fixA
+2026-10-02 19:42:07 [nik-G5-5587] end d2017_random_mlp_fixA rc=0 peak_rss_kb=2153104 warnings=0
+2026-10-02 19:42:07 [nik-G5-5587] start d2017_temporal_mlp_leaky
+2026-10-02 19:45:42 [nik-G5-5587] end d2017_temporal_mlp_leaky rc=0 peak_rss_kb=2004952 warnings=0
+2026-10-02 19:45:42 [nik-G5-5587] start d2017_temporal_mlp_fixA
+2026-10-02 19:47:10 [nik-G5-5587] end d2017_temporal_mlp_fixA rc=0 peak_rss_kb=2004172 warnings=0
+2026-10-02 19:47:10 [nik-G5-5587] start cpacket_random_mlp_leaky
+2026-10-02 19:51:17 [nik-G5-5587] end cpacket_random_mlp_leaky rc=0 peak_rss_kb=3077640 warnings=0
+2026-10-02 19:51:17 [nik-G5-5587] start cpacket_random_mlp_fixA
+2026-10-02 19:52:49 [nik-G5-5587] end cpacket_random_mlp_fixA rc=0 peak_rss_kb=3077956 warnings=0
+2026-10-02 19:52:49 [nik-G5-5587] start cpacket_temporal_mlp_leaky
+2026-10-02 19:56:01 [nik-G5-5587] end cpacket_temporal_mlp_leaky rc=0 peak_rss_kb=3005428 warnings=0
+2026-10-02 19:56:01 [nik-G5-5587] start cpacket_temporal_mlp_fixA
+2026-10-02 19:57:44 [nik-G5-5587] end cpacket_temporal_mlp_fixA rc=0 peak_rss_kb=3005452 warnings=0
+2026-10-02 19:57:45 [nik-G5-5587] tier2 complete
+2026-10-02 19:57:45 [nik-G5-5587] ALL TIERS DONE (tier2; datasets: d2017 cpacket; models: linsvc mlp)
+2026-10-02 21:39:55 [nik-G5-5587] === tier1 ===
+2026-10-02 21:39:55 [nik-G5-5587] start d2017_random_xgb_dropIAT
+2026-10-02 21:42:32 [nik-G5-5587] end d2017_random_xgb_dropIAT rc=0 peak_rss_kb=1961932 warnings=0
+2026-10-02 21:42:32 [nik-G5-5587] start d2017_temporal_xgb_dropIAT
+2026-10-02 21:44:59 [nik-G5-5587] end d2017_temporal_xgb_dropIAT rc=0 peak_rss_kb=1818240 warnings=0
+2026-10-02 21:44:59 [nik-G5-5587] start cpacket_random_xgb_dropIAT
+2026-10-02 21:55:37 [nik-G5-5587] end cpacket_random_xgb_dropIAT rc=0 peak_rss_kb=2628296 warnings=0
+2026-10-02 21:55:37 [nik-G5-5587] start cpacket_temporal_xgb_dropIAT
+2026-10-02 22:06:32 [nik-G5-5587] end cpacket_temporal_xgb_dropIAT rc=0 peak_rss_kb=2557180 warnings=0
+2026-10-02 22:06:33 [nik-G5-5587] tier1 complete
+2026-10-02 22:06:33 [nik-G5-5587] === tier2 ===
+2026-10-02 22:06:33 [nik-G5-5587] start d2017_random_mlp_dropIAT
+2026-10-02 22:08:01 [nik-G5-5587] end d2017_random_mlp_dropIAT rc=0 peak_rss_kb=2048532 warnings=0
+2026-10-02 22:08:01 [nik-G5-5587] start d2017_temporal_mlp_dropIAT
+2026-10-02 22:09:28 [nik-G5-5587] end d2017_temporal_mlp_dropIAT rc=0 peak_rss_kb=1899216 warnings=0
+2026-10-02 22:09:28 [nik-G5-5587] start cpacket_random_mlp_dropIAT
+2026-10-02 22:11:38 [nik-G5-5587] end cpacket_random_mlp_dropIAT rc=0 peak_rss_kb=2877852 warnings=0
+2026-10-02 22:11:38 [nik-G5-5587] start cpacket_temporal_mlp_dropIAT
+2026-10-02 22:15:23 [nik-G5-5587] end cpacket_temporal_mlp_dropIAT rc=0 peak_rss_kb=2805376 warnings=0
+2026-10-02 22:15:23 [nik-G5-5587] tier2 complete
+2026-10-02 22:15:23 [nik-G5-5587] ALL TIERS DONE (tier1 tier2; datasets: d2017 cpacket; models: xgb mlp; variants: dropIAT)
+2026-10-02 22:33:23 [nik-G5-5587] === tierknn ===
+2026-10-02 22:33:23 [nik-G5-5587] start d2017_random_knn_leaky
+2026-10-02 22:33:25 [nik-G5-5587] end d2017_random_knn_leaky rc=1 peak_rss_kb=1509540 warnings=0
+2026-10-02 22:33:25 [nik-G5-5587] FAILED d2017_random_knn_leaky (see results/logs/d2017_random_knn_leaky.log)
+2026-10-02 22:33:25 [nik-G5-5587] start d2017_random_knn_fixA
+2026-10-02 22:33:27 [nik-G5-5587] end d2017_random_knn_fixA rc=1 peak_rss_kb=1885060 warnings=0
+2026-10-02 22:33:27 [nik-G5-5587] FAILED d2017_random_knn_fixA (see results/logs/d2017_random_knn_fixA.log)
+2026-10-02 22:33:27 [nik-G5-5587] start d2017_random_knn_dropIAT
+2026-10-02 22:33:28 [nik-G5-5587] end d2017_random_knn_dropIAT rc=1 peak_rss_kb=1739424 warnings=0
+2026-10-02 22:33:28 [nik-G5-5587] FAILED d2017_random_knn_dropIAT (see results/logs/d2017_random_knn_dropIAT.log)
+2026-10-02 22:33:28 [nik-G5-5587] start d2017_temporal_knn_leaky
+2026-10-02 22:33:30 [nik-G5-5587] end d2017_temporal_knn_leaky rc=1 peak_rss_kb=1360600 warnings=0
+2026-10-02 22:33:30 [nik-G5-5587] FAILED d2017_temporal_knn_leaky (see results/logs/d2017_temporal_knn_leaky.log)
+2026-10-02 22:33:30 [nik-G5-5587] start d2017_temporal_knn_fixA
+2026-10-02 22:33:31 [nik-G5-5587] end d2017_temporal_knn_fixA rc=1 peak_rss_kb=1736260 warnings=0
+2026-10-02 22:33:31 [nik-G5-5587] FAILED d2017_temporal_knn_fixA (see results/logs/d2017_temporal_knn_fixA.log)
+2026-10-02 22:33:31 [nik-G5-5587] start d2017_temporal_knn_dropIAT
+2026-10-02 22:33:33 [nik-G5-5587] end d2017_temporal_knn_dropIAT rc=1 peak_rss_kb=1590596 warnings=0
+2026-10-02 22:33:33 [nik-G5-5587] FAILED d2017_temporal_knn_dropIAT (see results/logs/d2017_temporal_knn_dropIAT.log)
+2026-10-02 22:33:33 [nik-G5-5587] start cpacket_random_knn_leaky
+2026-10-02 22:33:34 [nik-G5-5587] end cpacket_random_knn_leaky rc=1 peak_rss_kb=1632824 warnings=0
+2026-10-02 22:33:34 [nik-G5-5587] FAILED cpacket_random_knn_leaky (see results/logs/cpacket_random_knn_leaky.log)
+2026-10-02 22:33:34 [nik-G5-5587] start cpacket_random_knn_fixA
+2026-10-02 22:33:36 [nik-G5-5587] end cpacket_random_knn_fixA rc=1 peak_rss_kb=2469876 warnings=0
+2026-10-02 22:33:36 [nik-G5-5587] FAILED cpacket_random_knn_fixA (see results/logs/cpacket_random_knn_fixA.log)
+2026-10-02 22:33:36 [nik-G5-5587] start cpacket_random_knn_dropIAT
+2026-10-02 22:33:39 [nik-G5-5587] end cpacket_random_knn_dropIAT rc=1 peak_rss_kb=2211768 warnings=0
+2026-10-02 22:33:39 [nik-G5-5587] FAILED cpacket_random_knn_dropIAT (see results/logs/cpacket_random_knn_dropIAT.log)
+2026-10-02 22:33:39 [nik-G5-5587] start cpacket_temporal_knn_leaky
+2026-10-02 22:33:40 [nik-G5-5587] end cpacket_temporal_knn_leaky rc=1 peak_rss_kb=1560512 warnings=0
+2026-10-02 22:33:40 [nik-G5-5587] FAILED cpacket_temporal_knn_leaky (see results/logs/cpacket_temporal_knn_leaky.log)
+2026-10-02 22:33:40 [nik-G5-5587] start cpacket_temporal_knn_fixA
+2026-10-02 22:33:43 [nik-G5-5587] end cpacket_temporal_knn_fixA rc=1 peak_rss_kb=2397652 warnings=0
+2026-10-02 22:33:43 [nik-G5-5587] FAILED cpacket_temporal_knn_fixA (see results/logs/cpacket_temporal_knn_fixA.log)
+2026-10-02 22:33:43 [nik-G5-5587] start cpacket_temporal_knn_dropIAT
+2026-10-02 22:33:45 [nik-G5-5587] end cpacket_temporal_knn_dropIAT rc=1 peak_rss_kb=2139128 warnings=0
+2026-10-02 22:33:45 [nik-G5-5587] FAILED cpacket_temporal_knn_dropIAT (see results/logs/cpacket_temporal_knn_dropIAT.log)
+2026-10-02 22:33:46 [nik-G5-5587] tierknn complete
+2026-10-02 22:33:46 [nik-G5-5587] ALL TIERS DONE (tierknn; datasets: d2017 cpacket; models: knn; variants: leaky fixA dropIAT)
+2026-10-02 22:41:23 [nik-G5-5587] previous KNN FAILED lines: sklearn files corrupted on disk, repaired; rerun
+2026-10-02 22:41:23 [nik-G5-5587] === tierknn ===
+2026-10-02 22:41:23 [nik-G5-5587] start d2017_random_knn_leaky
+2026-10-02 23:00:53 [nik-G5-5587] end d2017_random_knn_leaky rc=0 peak_rss_kb=2116244 warnings=0
+2026-10-02 23:00:53 [nik-G5-5587] start d2017_random_knn_fixA
+2026-10-02 23:12:35 [nik-G5-5587] end d2017_random_knn_fixA rc=0 peak_rss_kb=2116576 warnings=0
+2026-10-02 23:12:35 [nik-G5-5587] start d2017_random_knn_dropIAT
+2026-10-02 23:23:23 [nik-G5-5587] end d2017_random_knn_dropIAT rc=0 peak_rss_kb=2002040 warnings=0
+2026-10-02 23:23:23 [nik-G5-5587] start d2017_temporal_knn_leaky
+2026-10-02 23:44:23 [nik-G5-5587] end d2017_temporal_knn_leaky rc=0 peak_rss_kb=1967472 warnings=0
+2026-10-02 23:44:23 [nik-G5-5587] start d2017_temporal_knn_fixA
+2026-10-02 23:55:54 [nik-G5-5587] end d2017_temporal_knn_fixA rc=0 peak_rss_kb=1967244 warnings=0
+2026-10-02 23:55:54 [nik-G5-5587] start d2017_temporal_knn_dropIAT
+2026-10-03 00:06:11 [nik-G5-5587] end d2017_temporal_knn_dropIAT rc=0 peak_rss_kb=1903300 warnings=0
+2026-10-03 00:06:11 [nik-G5-5587] start cpacket_random_knn_leaky
+2026-10-03 00:21:58 [nik-G5-5587] end cpacket_random_knn_leaky rc=0 peak_rss_kb=3084500 warnings=0
+2026-10-03 00:21:58 [nik-G5-5587] start cpacket_random_knn_fixA
+2026-10-03 00:28:48 [nik-G5-5587] end cpacket_random_knn_fixA rc=0 peak_rss_kb=3084424 warnings=0
+2026-10-03 00:28:48 [nik-G5-5587] start cpacket_random_knn_dropIAT
+2026-10-03 00:35:07 [nik-G5-5587] end cpacket_random_knn_dropIAT rc=0 peak_rss_kb=2884324 warnings=0
+2026-10-03 00:35:07 [nik-G5-5587] start cpacket_temporal_knn_leaky
+2026-10-03 00:50:55 [nik-G5-5587] end cpacket_temporal_knn_leaky rc=0 peak_rss_kb=3012168 warnings=0
+2026-10-03 00:50:55 [nik-G5-5587] start cpacket_temporal_knn_fixA
+2026-10-03 00:57:47 [nik-G5-5587] end cpacket_temporal_knn_fixA rc=0 peak_rss_kb=3011784 warnings=0
+2026-10-03 00:57:47 [nik-G5-5587] start cpacket_temporal_knn_dropIAT
+2026-10-03 01:04:05 [nik-G5-5587] end cpacket_temporal_knn_dropIAT rc=0 peak_rss_kb=2811832 warnings=0
+2026-10-03 01:04:07 [nik-G5-5587] tierknn complete
+2026-10-03 01:04:07 [nik-G5-5587] ALL TIERS DONE (tierknn; datasets: d2017 cpacket; models: knn; variants: leaky fixA dropIAT)

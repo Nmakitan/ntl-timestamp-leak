@@ -1,0 +1,281 @@
+2026-10-02 13:58:27 === tier1 ===
+2026-10-02 13:58:27 start d2018_random_gnb_leaky
+2026-10-02 14:07:55 queue restarted (2018 reads switched to sequential blocks; first run had produced no result)
+2026-10-02 14:21:32 === tier1 ===
+2026-10-02 14:21:32 start d2018_random_gnb_leaky
+2026-10-02 14:22:05 end d2018_random_gnb_leaky rc=1 peak_rss_kb=1817412 warnings=0
+2026-10-02 14:22:05 FAILED d2018_random_gnb_leaky (see results/logs/d2018_random_gnb_leaky.log)
+2026-10-02 14:22:05 start d2018_random_gnb_fixA
+2026-10-02 14:22:26 end d2018_random_gnb_fixA rc=1 peak_rss_kb=1970824 warnings=0
+2026-10-02 14:22:26 FAILED d2018_random_gnb_fixA (see results/logs/d2018_random_gnb_fixA.log)
+2026-10-02 14:22:26 start d2018_temporal_gnb_leaky
+2026-10-02 14:22:58 end d2018_temporal_gnb_leaky rc=1 peak_rss_kb=1819696 warnings=0
+2026-10-02 14:22:58 FAILED d2018_temporal_gnb_leaky (see results/logs/d2018_temporal_gnb_leaky.log)
+2026-10-02 14:22:58 start d2018_temporal_gnb_fixA
+2026-10-02 14:23:13 queue stopped: runs failed on a NameError (te used before load); fixed, logs cleared
+2026-10-02 14:30:52 === tier1 ===
+2026-10-02 14:30:52 start d2018_random_gnb_leaky
+2026-10-02 14:32:27 end d2018_random_gnb_leaky rc=0 peak_rss_kb=2042356 warnings=0
+2026-10-02 14:32:27 start d2018_random_gnb_fixA
+2026-10-02 14:33:48 end d2018_random_gnb_fixA rc=137 peak_rss_kb= warnings=0
+2026-10-02 14:33:48 FAILED d2018_random_gnb_fixA (see results/logs/d2018_random_gnb_fixA.log)
+2026-10-02 14:33:48 start d2018_temporal_gnb_leaky
+2026-10-02 14:51:55 RELAUNCH after USB drive remount (pew -> pew2); added oomd-kill retry. Prior fixA rc=137 was systemd-oomd (system memory pressure), not the cap.
+2026-10-02 14:51:55 === tier1 ===
+2026-10-02 14:51:55 start d2018_random_gnb_fixA
+2026-10-02 14:53:08 KILLED d2018_random_gnb_fixA rc=137 (attempt 1), retrying in 120 s
+2026-10-02 14:57:17 RELAUNCH with NUMPY_MADVISE_HUGEPAGE=0 (root cause of rc=137: THP direct-compaction stalls -> oomd)
+2026-10-02 14:57:17 === tier1 ===
+2026-10-02 14:57:17 start d2018_random_gnb_fixA
+2026-10-02 14:58:02 end d2018_random_gnb_fixA rc=0 peak_rss_kb=2049660 warnings=0
+2026-10-02 14:58:02 start d2018_temporal_gnb_leaky
+2026-10-02 14:59:25 end d2018_temporal_gnb_leaky rc=0 peak_rss_kb=2065556 warnings=0
+2026-10-02 14:59:25 start d2018_temporal_gnb_fixA
+2026-10-02 15:00:14 end d2018_temporal_gnb_fixA rc=0 peak_rss_kb=2051604 warnings=0
+2026-10-02 15:00:14 start d2017_random_gnb_leaky
+2026-10-02 15:00:36 end d2017_random_gnb_leaky rc=0 peak_rss_kb=1964744 warnings=0
+2026-10-02 15:00:36 start d2017_random_gnb_fixA
+2026-10-02 15:00:45 end d2017_random_gnb_fixA rc=0 peak_rss_kb=1965332 warnings=0
+2026-10-02 15:00:45 start d2017_temporal_gnb_leaky
+2026-10-02 15:01:05 end d2017_temporal_gnb_leaky rc=0 peak_rss_kb=1783692 warnings=0
+2026-10-02 15:01:05 start d2017_temporal_gnb_fixA
+2026-10-02 15:01:14 end d2017_temporal_gnb_fixA rc=0 peak_rss_kb=1783800 warnings=0
+2026-10-02 15:01:14 start cpacket_random_gnb_leaky
+2026-10-02 15:01:42 end cpacket_random_gnb_leaky rc=0 peak_rss_kb=2301412 warnings=0
+2026-10-02 15:01:42 start cpacket_random_gnb_fixA
+2026-10-02 15:01:55 end cpacket_random_gnb_fixA rc=0 peak_rss_kb=2530844 warnings=0
+2026-10-02 15:01:55 start cpacket_temporal_gnb_leaky
+2026-10-02 15:02:22 end cpacket_temporal_gnb_leaky rc=0 peak_rss_kb=2202080 warnings=0
+2026-10-02 15:02:22 start cpacket_temporal_gnb_fixA
+2026-10-02 15:02:35 end cpacket_temporal_gnb_fixA rc=0 peak_rss_kb=2394012 warnings=0
+2026-10-02 15:02:35 start d2018_random_dt_leaky
+2026-10-02 15:04:04 end d2018_random_dt_leaky rc=0 peak_rss_kb=1824748 warnings=0
+2026-10-02 15:04:04 start d2018_random_dt_fixA
+2026-10-02 15:05:34 end d2018_random_dt_fixA rc=0 peak_rss_kb=1982244 warnings=0
+2026-10-02 15:05:34 start d2018_temporal_dt_leaky
+2026-10-02 15:07:11 end d2018_temporal_dt_leaky rc=0 peak_rss_kb=1824008 warnings=0
+2026-10-02 15:07:11 start d2018_temporal_dt_fixA
+2026-10-02 15:08:44 end d2018_temporal_dt_fixA rc=0 peak_rss_kb=1982068 warnings=0
+2026-10-02 15:08:44 start d2017_random_dt_leaky
+2026-10-02 15:09:12 end d2017_random_dt_leaky rc=0 peak_rss_kb=1669860 warnings=0
+2026-10-02 15:09:12 start d2017_random_dt_fixA
+2026-10-02 15:09:39 end d2017_random_dt_fixA rc=0 peak_rss_kb=1945748 warnings=0
+2026-10-02 15:09:39 start d2017_temporal_dt_leaky
+2026-10-02 15:10:06 end d2017_temporal_dt_leaky rc=0 peak_rss_kb=1669776 warnings=0
+2026-10-02 15:10:06 start d2017_temporal_dt_fixA
+2026-10-02 15:10:29 end d2017_temporal_dt_fixA rc=0 peak_rss_kb=1764264 warnings=0
+2026-10-02 15:10:29 start cpacket_random_dt_leaky
+2026-10-02 15:11:29 end cpacket_random_dt_leaky rc=0 peak_rss_kb=1712280 warnings=0
+2026-10-02 15:11:29 start cpacket_random_dt_fixA
+2026-10-02 15:12:17 end cpacket_random_dt_fixA rc=0 peak_rss_kb=2530968 warnings=0
+2026-10-02 15:12:17 start cpacket_temporal_dt_leaky
+2026-10-02 15:13:13 end cpacket_temporal_dt_leaky rc=0 peak_rss_kb=1601544 warnings=0
+2026-10-02 15:13:13 start cpacket_temporal_dt_fixA
+2026-10-02 15:14:01 end cpacket_temporal_dt_fixA rc=0 peak_rss_kb=2394184 warnings=0
+2026-10-02 15:14:01 start d2018_random_lr_leaky
+2026-10-02 15:28:16 end d2018_random_lr_leaky rc=0 peak_rss_kb=2680592 warnings=1
+2026-10-02 15:28:16 start d2018_random_lr_fixA
+2026-10-02 15:40:01 d2018_random_lr_fixA finished under the old queue (pid 2517373, no end line); json exists: yes
+2026-10-02 15:40:01 RELAUNCH: split with laptop (laptop: lr+xgb on d2017,cpacket; see results/ASSIGNED_ELSEWHERE.txt)
+2026-10-02 15:40:01 [pc] === tier1 ===
+2026-10-02 15:40:01 [pc] start d2018_temporal_lr_leaky
+2026-10-02 15:52:15 [pc] end d2018_temporal_lr_leaky rc=0 peak_rss_kb=2680692 warnings=1
+2026-10-02 15:52:15 [pc] start d2018_temporal_lr_fixA
+2026-10-02 16:02:05 [pc] end d2018_temporal_lr_fixA rc=0 peak_rss_kb=2680364 warnings=1
+2026-10-02 16:02:05 [pc] start d2018_random_xgb_leaky
+2026-10-02 16:07:30 [pc] end d2018_random_xgb_leaky rc=0 peak_rss_kb=1927324 warnings=0
+2026-10-02 16:07:30 [pc] start d2018_random_xgb_fixA
+2026-10-02 16:12:57 [pc] end d2018_random_xgb_fixA rc=0 peak_rss_kb=1982772 warnings=0
+2026-10-02 16:12:57 [pc] start d2018_temporal_xgb_leaky
+2026-10-02 16:18:29 [pc] end d2018_temporal_xgb_leaky rc=0 peak_rss_kb=1940360 warnings=0
+2026-10-02 16:18:29 [pc] start d2018_temporal_xgb_fixA
+2026-10-02 16:23:57 [pc] end d2018_temporal_xgb_fixA rc=0 peak_rss_kb=1982588 warnings=0
+2026-10-02 16:23:57 [pc] tier1 complete
+2026-10-02 16:23:57 [pc] === tier2 ===
+2026-10-02 16:23:57 [pc] start d2018_random_rf_leaky
+2026-10-02 16:27:52 [pc] end d2018_random_rf_leaky rc=0 peak_rss_kb=1935516 warnings=0
+2026-10-02 16:27:52 [pc] start d2018_random_rf_fixA
+2026-10-02 16:30:52 [pc] end d2018_random_rf_fixA rc=0 peak_rss_kb=1982744 warnings=0
+2026-10-02 16:30:52 [pc] start d2018_temporal_rf_leaky
+2026-10-02 16:34:42 [pc] end d2018_temporal_rf_leaky rc=0 peak_rss_kb=1945260 warnings=0
+2026-10-02 16:34:42 [pc] start d2018_temporal_rf_fixA
+2026-10-02 16:37:38 [pc] end d2018_temporal_rf_fixA rc=0 peak_rss_kb=1982564 warnings=0
+2026-10-02 16:37:38 [pc] start d2017_random_rf_leaky
+2026-10-02 16:39:10 [pc] end d2017_random_rf_leaky rc=0 peak_rss_kb=1823476 warnings=0
+2026-10-02 16:39:10 [pc] start d2017_random_rf_fixA
+2026-10-02 16:40:20 [pc] end d2017_random_rf_fixA rc=0 peak_rss_kb=1946088 warnings=0
+2026-10-02 16:40:20 [pc] start d2017_temporal_rf_leaky
+2026-10-02 16:41:52 [pc] end d2017_temporal_rf_leaky rc=0 peak_rss_kb=1810892 warnings=0
+2026-10-02 16:41:52 [pc] start d2017_temporal_rf_fixA
+2026-10-02 16:43:02 [pc] end d2017_temporal_rf_fixA rc=0 peak_rss_kb=1815736 warnings=0
+2026-10-02 16:43:02 [pc] start cpacket_random_rf_leaky
+2026-10-02 16:45:44 [pc] end cpacket_random_rf_leaky rc=0 peak_rss_kb=2444548 warnings=0
+2026-10-02 16:45:44 [pc] start cpacket_random_rf_fixA
+2026-10-02 16:48:03 [pc] end cpacket_random_rf_fixA rc=0 peak_rss_kb=2531264 warnings=0
+2026-10-02 16:48:03 [pc] start cpacket_temporal_rf_leaky
+2026-10-02 16:50:49 [pc] end cpacket_temporal_rf_leaky rc=0 peak_rss_kb=2295500 warnings=0
+2026-10-02 16:50:49 [pc] start cpacket_temporal_rf_fixA
+2026-10-02 16:53:08 [pc] end cpacket_temporal_rf_fixA rc=0 peak_rss_kb=2391308 warnings=0
+2026-10-02 16:53:08 [pc] start d2018_random_linsvc_leaky
+2026-10-02 17:39:58 laptop results synced (final)
+2026-10-02 17:41:13 [pc] reassigned to laptop: linsvc+mlp on d2017,cpacket
+2026-10-02 19:38:27 [pc] end d2018_random_linsvc_leaky rc=143 peak_rss_kb=6158052 warnings=0
+2026-10-02 19:38:27 [pc] FAILED d2018_random_linsvc_leaky (see results/logs/d2018_random_linsvc_leaky.log)
+2026-10-02 19:38:27 [pc] start d2018_random_mlp_leaky
+2026-10-02 19:38:46 [pc] LinearSVC dropped by user decision; in-progress linsvc runs on both machines stopped (their FAILED lines are these kills)
+2026-10-02 19:40:43 [pc] end d2018_random_mlp_leaky rc=0 peak_rss_kb=2675516 warnings=0
+2026-10-02 19:40:43 [pc] start d2018_random_mlp_fixA
+2026-10-02 19:44:13 [pc] end d2018_random_mlp_fixA rc=0 peak_rss_kb=2676536 warnings=0
+2026-10-02 19:44:13 [pc] start d2018_temporal_mlp_leaky
+2026-10-02 19:47:05 [pc] end d2018_temporal_mlp_leaky rc=0 peak_rss_kb=2677000 warnings=0
+2026-10-02 19:47:05 [pc] start d2018_temporal_mlp_fixA
+2026-10-02 19:50:24 [pc] end d2018_temporal_mlp_fixA rc=0 peak_rss_kb=2677000 warnings=0
+2026-10-02 19:50:25 [pc] tier2 complete
+2026-10-02 19:50:25 [pc] ALL TIERS DONE (tier1 tier2; datasets: d2018 d2017 cpacket)
+2026-10-02 20:01:52 laptop results synced (final)
+2026-10-02 21:42:07 [pc] dropIAT variant queued (user 2026-10-02 ~21:45): gnb dt xgb rf mlp; laptop does xgb+mlp on d2017,cpacket; LogReg excluded by user
+2026-10-02 21:42:07 [pc] === tier1 ===
+2026-10-02 21:42:07 [pc] start d2018_random_gnb_dropIAT
+2026-10-02 21:42:09 [pc] dropIAT variant queued by user: gnb dt xgb rf mlp (LogReg excluded by user); laptop does xgb+mlp on d2017,cpacket
+2026-10-02 21:42:09 [pc] === tier1 ===
+2026-10-02 21:42:09 [pc] start d2018_random_gnb_dropIAT
+2026-10-02 21:42:30 [pc] the two queue starts above were an accidental double launch; both stopped, partial d2018_random_gnb_dropIAT removed, single queue restarted
+2026-10-02 21:42:30 [pc] === tier1 ===
+2026-10-02 21:42:30 [pc] start d2018_random_gnb_dropIAT
+2026-10-02 21:43:16 [pc] end d2018_random_gnb_dropIAT rc=0 peak_rss_kb=1977940 warnings=0
+2026-10-02 21:43:16 [pc] start d2018_temporal_gnb_dropIAT
+2026-10-02 21:44:06 [pc] end d2018_temporal_gnb_dropIAT rc=0 peak_rss_kb=1978368 warnings=0
+2026-10-02 21:44:06 [pc] start d2017_random_gnb_dropIAT
+2026-10-02 21:44:17 [pc] end d2017_random_gnb_dropIAT rc=0 peak_rss_kb=1870076 warnings=0
+2026-10-02 21:44:17 [pc] start d2017_temporal_gnb_dropIAT
+2026-10-02 21:44:27 [pc] end d2017_temporal_gnb_dropIAT rc=0 peak_rss_kb=1711176 warnings=0
+2026-10-02 21:44:27 [pc] start cpacket_random_gnb_dropIAT
+2026-10-02 21:44:41 [pc] end cpacket_random_gnb_dropIAT rc=0 peak_rss_kb=2267364 warnings=0
+2026-10-02 21:44:41 [pc] start cpacket_temporal_gnb_dropIAT
+2026-10-02 21:44:56 [pc] end cpacket_temporal_gnb_dropIAT rc=0 peak_rss_kb=2135956 warnings=0
+2026-10-02 21:44:56 [pc] start d2018_random_dt_dropIAT
+2026-10-02 21:46:15 [pc] end d2018_random_dt_dropIAT rc=0 peak_rss_kb=1766628 warnings=0
+2026-10-02 21:46:15 [pc] start d2018_temporal_dt_dropIAT
+2026-10-02 21:47:26 [pc] end d2018_temporal_dt_dropIAT rc=0 peak_rss_kb=1765880 warnings=0
+2026-10-02 21:47:26 [pc] start d2017_random_dt_dropIAT
+2026-10-02 21:47:44 [pc] end d2017_random_dt_dropIAT rc=0 peak_rss_kb=1799940 warnings=0
+2026-10-02 21:47:44 [pc] start d2017_temporal_dt_dropIAT
+2026-10-02 21:48:03 [pc] end d2017_temporal_dt_dropIAT rc=0 peak_rss_kb=1652116 warnings=0
+2026-10-02 21:48:03 [pc] start cpacket_random_dt_dropIAT
+2026-10-02 21:48:32 [pc] end cpacket_random_dt_dropIAT rc=0 peak_rss_kb=2241172 warnings=0
+2026-10-02 21:48:32 [pc] start cpacket_temporal_dt_dropIAT
+2026-10-02 21:49:02 [pc] end cpacket_temporal_dt_dropIAT rc=0 peak_rss_kb=2135652 warnings=0
+2026-10-02 21:49:02 [pc] start d2018_random_xgb_dropIAT
+2026-10-02 21:53:44 [pc] end d2018_random_xgb_dropIAT rc=0 peak_rss_kb=1858052 warnings=0
+2026-10-02 21:53:44 [pc] start d2018_temporal_xgb_dropIAT
+2026-10-02 21:58:17 [pc] end d2018_temporal_xgb_dropIAT rc=0 peak_rss_kb=1849264 warnings=0
+2026-10-02 21:58:17 [pc] tier1 complete
+2026-10-02 21:58:17 [pc] === tier2 ===
+2026-10-02 21:58:17 [pc] start d2018_random_rf_dropIAT
+2026-10-02 22:00:20 [pc] end d2018_random_rf_dropIAT rc=0 peak_rss_kb=1866928 warnings=0
+2026-10-02 22:00:20 [pc] start d2018_temporal_rf_dropIAT
+2026-10-02 22:02:22 [pc] end d2018_temporal_rf_dropIAT rc=0 peak_rss_kb=1864368 warnings=0
+2026-10-02 22:02:22 [pc] start d2017_random_rf_dropIAT
+2026-10-02 22:03:16 [pc] end d2017_random_rf_dropIAT rc=0 peak_rss_kb=1800272 warnings=0
+2026-10-02 22:03:16 [pc] start d2017_temporal_rf_dropIAT
+2026-10-02 22:04:09 [pc] end d2017_temporal_rf_dropIAT rc=0 peak_rss_kb=1790728 warnings=0
+2026-10-02 22:04:09 [pc] start cpacket_random_rf_dropIAT
+2026-10-02 22:05:56 [pc] end cpacket_random_rf_dropIAT rc=0 peak_rss_kb=2256820 warnings=0
+2026-10-02 22:05:56 [pc] start cpacket_temporal_rf_dropIAT
+2026-10-02 22:07:42 [pc] end cpacket_temporal_rf_dropIAT rc=0 peak_rss_kb=2135636 warnings=0
+2026-10-02 22:07:42 [pc] start d2018_random_mlp_dropIAT
+2026-10-02 22:09:44 [pc] end d2018_random_mlp_dropIAT rc=0 peak_rss_kb=2448156 warnings=0
+2026-10-02 22:09:44 [pc] start d2018_temporal_mlp_dropIAT
+2026-10-02 22:11:32 [pc] end d2018_temporal_mlp_dropIAT rc=0 peak_rss_kb=2447096 warnings=0
+2026-10-02 22:11:32 [pc] tier2 complete
+2026-10-02 22:11:32 [pc] ALL TIERS DONE (tier1 tier2; datasets: d2018 d2017 cpacket; models: gnb dt xgb rf mlp; variants: dropIAT)
+2026-10-02 22:17:39 laptop results synced (final)
+2026-10-02 22:41:23 [pc] KNN tier started by user (full test sets, overnight): PC d2018, laptop d2017+cpacket. Laptop's first KNN attempt at 22:33 failed on import: 60 scikit-learn files in its venv corrupted on disk after 15:47 (identical garbage blocks); repaired from the PC copy (md5-identical now); laptop data caches md5-identical to PC; laptop xgb result recomputed on PC: identical predictions
+2026-10-02 22:41:27 [pc] === tierknn ===
+2026-10-02 22:41:27 [pc] start d2018_random_knn_leaky
+2026-10-03 00:33:16 [pc] end d2018_random_knn_leaky rc=0 peak_rss_kb=2685928 warnings=0
+2026-10-03 00:33:16 [pc] start d2018_random_knn_fixA
+2026-10-03 01:07:11 laptop results synced (final)
+2026-10-03 01:37:57 [pc] end d2018_random_knn_fixA rc=0 peak_rss_kb=2685128 warnings=0
+2026-10-03 01:37:57 [pc] start d2018_random_knn_dropIAT
+2026-10-03 02:36:33 [pc] end d2018_random_knn_dropIAT rc=0 peak_rss_kb=2680568 warnings=0
+2026-10-03 02:36:33 [pc] start d2018_temporal_knn_leaky
+2026-10-03 04:23:16 [pc] end d2018_temporal_knn_leaky rc=0 peak_rss_kb=2685556 warnings=0
+2026-10-03 04:23:16 [pc] start d2018_temporal_knn_fixA
+2026-10-03 05:28:22 [pc] end d2018_temporal_knn_fixA rc=0 peak_rss_kb=2685572 warnings=0
+2026-10-03 05:28:22 [pc] start d2018_temporal_knn_dropIAT
+2026-10-03 06:27:44 [pc] end d2018_temporal_knn_dropIAT rc=0 peak_rss_kb=2680136 warnings=0
+2026-10-03 06:27:44 [pc] tierknn complete
+2026-10-03 06:27:44 [pc] ALL TIERS DONE (tierknn; datasets: d2018; models: knn; variants: leaky fixA dropIAT)
+2026-10-03 06:29:45 [pc] KNN finishing steps done (see results/logs/finish_knn.log)
+2026-10-03 11:02:26 [pc] full-train tier started by user: rffull + xgbfull on d2018 (full training split), leaky/fixA/dropIAT; loader + native-XGB path verified on samples
+2026-10-03 11:02:26 [pc] === tierfull ===
+2026-10-03 11:02:26 [pc] start d2018_random_rffull_leaky
+2026-10-03 11:27:20 [pc] end d2018_random_rffull_leaky rc=0 peak_rss_kb=5708928 warnings=0
+2026-10-03 11:27:20 [pc] start d2018_random_rffull_fixA
+2026-10-03 11:49:56 [pc] end d2018_random_rffull_fixA rc=0 peak_rss_kb=5590188 warnings=0
+2026-10-03 11:49:56 [pc] start d2018_random_rffull_dropIAT
+2026-10-03 12:09:21 [pc] end d2018_random_rffull_dropIAT rc=0 peak_rss_kb=6720064 warnings=0
+2026-10-03 12:09:21 [pc] start d2018_temporal_rffull_leaky
+2026-10-03 12:31:25 [pc] end d2018_temporal_rffull_leaky rc=0 peak_rss_kb=6746440 warnings=0
+2026-10-03 12:31:25 [pc] start d2018_temporal_rffull_fixA
+2026-10-03 12:51:58 [pc] end d2018_temporal_rffull_fixA rc=0 peak_rss_kb=6725936 warnings=0
+2026-10-03 12:51:58 [pc] start d2018_temporal_rffull_dropIAT
+2026-10-03 13:10:04 [pc] end d2018_temporal_rffull_dropIAT rc=0 peak_rss_kb=6680028 warnings=0
+2026-10-03 13:10:04 [pc] start d2018_random_xgbfull_leaky
+2026-10-03 13:37:39 [pc] end d2018_random_xgbfull_leaky rc=1 peak_rss_kb=6793072 warnings=0
+2026-10-03 13:37:39 [pc] FAILED d2018_random_xgbfull_leaky (see results/logs/d2018_random_xgbfull_leaky.log)
+2026-10-03 13:37:39 [pc] start d2018_random_xgbfull_fixA
+2026-10-03 14:06:27 [pc] end d2018_random_xgbfull_fixA rc=1 peak_rss_kb=6788560 warnings=0
+2026-10-03 14:06:27 [pc] FAILED d2018_random_xgbfull_fixA (see results/logs/d2018_random_xgbfull_fixA.log)
+2026-10-03 14:06:27 [pc] start d2018_random_xgbfull_dropIAT
+2026-10-03 14:29:59 [pc] end d2018_random_xgbfull_dropIAT rc=1 peak_rss_kb=6779444 warnings=0
+2026-10-03 14:29:59 [pc] FAILED d2018_random_xgbfull_dropIAT (see results/logs/d2018_random_xgbfull_dropIAT.log)
+2026-10-03 14:29:59 [pc] start d2018_temporal_xgbfull_leaky
+2026-10-03 14:48:03 [pc] xgbfull runs failed at result-writing (bug in the BoosterClf wrapper's __repr__, after training and prediction); fixed and tested; queue restarted for the 6 xgbfull runs (rffull runs complete)
+2026-10-03 14:48:03 [pc] === tierfull ===
+2026-10-03 14:48:03 [pc] start d2018_random_xgbfull_leaky
+2026-10-03 15:15:47 [pc] end d2018_random_xgbfull_leaky rc=0 peak_rss_kb=6790308 warnings=0
+2026-10-03 15:15:47 [pc] start d2018_random_xgbfull_fixA
+2026-10-03 15:44:07 [pc] end d2018_random_xgbfull_fixA rc=0 peak_rss_kb=6782088 warnings=0
+2026-10-03 15:44:07 [pc] start d2018_random_xgbfull_dropIAT
+2026-10-03 16:07:27 [pc] end d2018_random_xgbfull_dropIAT rc=0 peak_rss_kb=6782984 warnings=0
+2026-10-03 16:07:27 [pc] start d2018_temporal_xgbfull_leaky
+2026-10-03 16:32:57 [pc] end d2018_temporal_xgbfull_leaky rc=0 peak_rss_kb=6791244 warnings=0
+2026-10-03 16:32:57 [pc] start d2018_temporal_xgbfull_fixA
+2026-10-03 16:59:13 [pc] end d2018_temporal_xgbfull_fixA rc=0 peak_rss_kb=6800640 warnings=0
+2026-10-03 16:59:13 [pc] start d2018_temporal_xgbfull_dropIAT
+2026-10-03 17:21:58 [pc] end d2018_temporal_xgbfull_dropIAT rc=0 peak_rss_kb=6771248 warnings=0
+2026-10-03 17:21:59 [pc] tierfull complete
+2026-10-03 17:21:59 [pc] ALL TIERS DONE (tierfull; datasets: d2018; models: xgbfull; variants: leaky fixA dropIAT)
+2026-10-03 17:22:24 [pc] full-train finishing steps done (see results/logs/finish_full.log)
+2026-10-03 17:44:12 [pc] start d2017_lodo_0705_dt_leaky
+2026-10-03 17:44:12 [pc] start d2017_lodo_0705_gnb_leaky
+2026-10-03 17:44:32 [pc] end d2017_lodo_0705_gnb_leaky rc=0 peak_rss_kb=1824996
+2026-10-03 17:44:32 [pc] start d2017_lodo_0707_dt_leaky
+2026-10-03 17:44:39 [pc] end d2017_lodo_0705_dt_leaky rc=0 peak_rss_kb=1745340
+2026-10-03 17:44:39 [pc] start d2017_lodo_0707_gnb_leaky
+2026-10-03 17:44:58 [pc] end d2017_lodo_0707_dt_leaky rc=0 peak_rss_kb=1679384
+2026-10-03 17:44:58 [pc] start d2017_lodo_0703_dt_leaky
+2026-10-03 17:44:58 [pc] end d2017_lodo_0707_gnb_leaky rc=0 peak_rss_kb=1758648
+2026-10-03 17:44:58 [pc] start d2017_lodo_0703_gnb_leaky
+2026-10-03 17:45:17 [pc] end d2017_lodo_0703_gnb_leaky rc=0 peak_rss_kb=1710640
+2026-10-03 17:45:17 [pc] start d2017_lodo_0704_dt_leaky
+2026-10-03 17:45:26 [pc] end d2017_lodo_0703_dt_leaky rc=0 peak_rss_kb=1617272
+2026-10-03 17:45:26 [pc] start d2017_lodo_0704_gnb_leaky
+2026-10-03 17:45:41 [pc] end d2017_lodo_0704_gnb_leaky rc=0 peak_rss_kb=1759964
+2026-10-03 17:45:41 [pc] start d2017_lodo_0706_dt_leaky
+2026-10-03 17:45:49 [pc] end d2017_lodo_0704_dt_leaky rc=0 peak_rss_kb=1583268
+2026-10-03 17:45:49 [pc] start d2017_lodo_0706_gnb_leaky
+2026-10-03 17:45:55 [pc] end d2017_lodo_0706_gnb_leaky rc=0 peak_rss_kb=1898712
+2026-10-03 17:46:10 [pc] end d2017_lodo_0706_dt_leaky rc=0 peak_rss_kb=1557404
+2026-10-03 17:46:10 [pc] LODO PART 0/2 DONE
+2026-10-03 18:08:24 [pc] start d2017_lodo_0705_rf_leaky
+2026-10-03 18:08:24 [pc] start d2017_lodo_0705_rf_fixA
+2026-10-03 18:10:15 [pc] end d2017_lodo_0705_rf_fixA rc=0 peak_rss_kb=1861768
+2026-10-03 18:10:15 [pc] start d2017_lodo_0703_rf_leaky
+2026-10-03 18:10:46 [pc] end d2017_lodo_0705_rf_leaky rc=0 peak_rss_kb=1862428
+2026-10-03 18:10:46 [pc] start d2017_lodo_0703_rf_fixA
+2026-10-03 18:12:28 [pc] end d2017_lodo_0703_rf_leaky rc=0 peak_rss_kb=1761124
+2026-10-03 18:12:31 [pc] end d2017_lodo_0703_rf_fixA rc=0 peak_rss_kb=1761084
+2026-10-03 18:12:31 [pc] LODO PART 0/1 DONE

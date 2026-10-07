@@ -1,0 +1,23 @@
+	Command being timed: "python3 mc_run.py d2018 temporal knn leaky"
+	User time (seconds): 25171.27
+	System time (seconds): 4.83
+	Percent of CPU this job got: 393%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:46:42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2685556
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 46
+	Minor (reclaiming a frame) page faults: 2370599
+	Voluntary context switches: 7233
+	Involuntary context switches: 71754
+	Swaps: 0
+	File system inputs: 300624
+	File system outputs: 600
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

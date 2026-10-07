@@ -1,0 +1,1 @@
+temporal leaky s0: acc=0.9397 mF1=0.6327 | leaked acc=0.8590 | multi-packet acc=0.9902 | thr>1e9 33854 (IAT 33854) | fit 260s

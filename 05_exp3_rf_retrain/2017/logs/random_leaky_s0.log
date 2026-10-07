@@ -1,0 +1,1 @@
+random leaky s0: acc=0.9915 mF1=0.7400 | leaked acc=0.9850 | multi-packet acc=0.9964 | thr>1e9 41107 (IAT 41107) | fit 245s

@@ -1,0 +1,22 @@
+{
+ "dataset": "d2017",
+ "split": "random",
+ "n": 599999,
+ "train_rows": 1828539,
+ "class_counts": {
+  "Benign": 439577,
+  "Botnet_ARES": 1355,
+  "DDoS_LOIT": 23559,
+  "DoS_GoldenEye": 2058,
+  "DoS_Hulk": 85945,
+  "DoS_Slowhttptest": 1688,
+  "DoS_Slowloris": 1274,
+  "FTP-Patator": 2345,
+  "Heartbleed": 9,
+  "Port_Scan": 39700,
+  "SSH-Patator": 1464,
+  "Web_Brute_Force": 673,
+  "Web_SQL_Injection": 18,
+  "Web_XSS": 334
+ }
+}

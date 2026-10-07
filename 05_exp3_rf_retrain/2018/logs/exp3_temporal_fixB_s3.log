@@ -1,0 +1,3 @@
+temporal_fixB_s3: train 2179323 test 776198 dropped {'train': 1082352, 'test': 311025}
+temporal_fixB_s3: fit 736s, rss peak 5.86GB
+temporal_fixB_s3: acc=0.9991 mF1=0.9732 | leaked acc=0.9895 | thresholds>1e9: 0

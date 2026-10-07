@@ -1,0 +1,1 @@
+d2017 temporal dt leaky: leaky acc=0.9325 leaked=0.8392 | leaky_plus8y acc=0.8737 leaked=0.6898 | leaky_zero acc=0.8660 leaked=0.6700 | fit 23s, warnings 0

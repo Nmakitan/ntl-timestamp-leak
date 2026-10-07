@@ -1,0 +1,22 @@
+{
+ "dataset": "d2017",
+ "split": "lodo_0704",
+ "n": 600001,
+ "train_rows": 2026596,
+ "class_counts": {
+  "Benign": 411588,
+  "Botnet_ARES": 1631,
+  "DDoS_LOIT": 28342,
+  "DoS_GoldenEye": 2476,
+  "DoS_Hulk": 103393,
+  "DoS_Slowhttptest": 2031,
+  "DoS_Slowloris": 1533,
+  "FTP-Patator": 0,
+  "Heartbleed": 12,
+  "Port_Scan": 47760,
+  "SSH-Patator": 0,
+  "Web_Brute_Force": 809,
+  "Web_SQL_Injection": 24,
+  "Web_XSS": 402
+ }
+}

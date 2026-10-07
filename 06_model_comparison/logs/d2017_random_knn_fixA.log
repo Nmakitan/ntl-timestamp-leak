@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/nik/Desktop/ntl_models/mc_run.py", line 66, in <module>
+    clf = build(model)
+          ^^^^^^^^^^^^
+  File "/home/nik/Desktop/ntl_models/mc_run.py", line 41, in build
+    from sklearn.neighbors import KNeighborsClassifier
+  File "/home/nik/ntl_models/venv/lib/python3.12/site-packages/sklearn/neighbors/__init__.py", line 25, in <module>
+    from sklearn.neighbors._nca import NeighborhoodComponentsAnalysis
+  File "/home/nik/ntl_models/venv/lib/python3.12/site-packages/sklearn/neighbors/_nca.py", line 22, in <module>
+    from sklearn.decomposition import PCA
+  File "/home/nik/ntl_models/venv/lib/python3.12/site-packages/sklearn/decomposition/__init__.py", line 10, in <module>
+    from sklearn.decomposition._dict_learning import (
+  File "/home/nik/ntl_models/venv/lib/python3.12/site-packages/sklearn/decomposition/_dict_learning.py", line 21, in <module>
+    from sklearn.linear_model import Lars, Lasso, LassoLars, orthogonal_mp_gram
+  File "/home/nik/ntl_models/venv/lib/python3.12/site-packages/sklearn/linear_model/__init__.py", line 12, in <module>
+  File "/home/nik/ntl_models/venv/lib/python3.12/site-packages/sklearn/linear_model/_coordinate_descent.py", line 18, in <module>
+    from sklearn.linear_model import _cd_fast as cd_fast  # type: ignore[attr-defined]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /home/nik/ntl_models/venv/lib/python3.12/site-packages/sklearn/linear_model/_cd_fast.cpython-312-x86_64-linux-gnu.so: invalid ELF header

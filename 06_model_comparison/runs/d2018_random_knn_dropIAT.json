@@ -1,0 +1,347 @@
+{
+ "dataset": "d2018",
+ "split": "random",
+ "model": "knn",
+ "variant": "dropIAT",
+ "params": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('kneighborsclassifier',\n                 KNeighborsClassifier(n_jobs=8, weights='distance'))])",
+ "n_train": 600000,
+ "n_test": 1087225,
+ "n_features": 283,
+ "fit_seconds": 3.1,
+ "predict_seconds": 3482.7,
+ "peak_rss_gb_self": 2.680568,
+ "warnings": [],
+ "n_warnings": 0,
+ "conditions": {
+  "dropIAT": {
+   "all": {
+    "n": 1087225,
+    "accuracy": 0.8842024419968267,
+    "macro_f1": 0.857740130102714,
+    "mean_attack_recall": 0.8826221454848913,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.999824688012745,
+      "precision": 0.9995762928173976,
+      "support": 587524,
+      "correct": 587421
+     },
+     "Bot": {
+      "recall": 0.999510660608179,
+      "precision": 0.36276634072329994,
+      "support": 71525,
+      "correct": 71490
+     },
+     "Brute_Force_Web": {
+      "recall": 0.9850746268656716,
+      "precision": 0.9230769230769231,
+      "support": 134,
+      "correct": 132
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.9655172413793104,
+      "precision": 0.875,
+      "support": 58,
+      "correct": 56
+     },
+     "DDoS_HOIC": {
+      "recall": 0.49820926068048094,
+      "precision": 0.9998636257891654,
+      "support": 250176,
+      "correct": 124640
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.9992677737559061,
+      "precision": 0.9999308762131225,
+      "support": 72382,
+      "correct": 72329
+     },
+     "DoS_HULK": {
+      "recall": 0.9980129852049663,
+      "precision": 0.9997591125198099,
+      "support": 79013,
+      "correct": 78856
+     },
+     "DoS_SlowHTTP": {
+      "recall": 1.0,
+      "precision": 0.9998863205759757,
+      "support": 26387,
+      "correct": 26387
+     },
+     "SQL_Injection": {
+      "recall": 0.6153846153846154,
+      "precision": 0.6956521739130435,
+      "support": 26,
+      "correct": 16
+     }
+    },
+    "confusion": [
+     [
+      587421,
+      38,
+      8,
+      8,
+      17,
+      5,
+      19,
+      3,
+      5
+     ],
+     [
+      34,
+      71490,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      132,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      56,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      125536,
+      0,
+      0,
+      124640,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      53,
+      0,
+      0,
+      0,
+      0,
+      72329,
+      0,
+      0,
+      0
+     ],
+     [
+      157,
+      0,
+      0,
+      0,
+      0,
+      0,
+      78856,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26387,
+      0
+     ],
+     [
+      5,
+      3,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16
+     ]
+    ]
+   },
+   "leaked_rows": {
+    "n": 398418,
+    "accuracy": 0.6841106576510098,
+    "macro_f1": 0.6015195400714248,
+    "mean_attack_recall": 0.6274155054336956,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.9996708768984202,
+      "precision": 0.9988371150922444,
+      "support": 209648,
+      "correct": 209579
+     },
+     "Bot": {
+      "recall": 0.9990219912258641,
+      "precision": 0.2216106317564217,
+      "support": 35787,
+      "correct": 35752
+     },
+     "Brute_Force_Web": {
+      "recall": 0.967741935483871,
+      "precision": 0.8823529411764706,
+      "support": 62,
+      "correct": 60
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.9545454545454546,
+      "precision": 0.8076923076923077,
+      "support": 22,
+      "correct": 21
+     },
+     "DDoS_HOIC": {
+      "recall": 0.0002309560785250667,
+      "precision": 0.7435897435897436,
+      "support": 125565,
+      "correct": 29
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 50,
+      "correct": 0
+     },
+     "DoS_HULK": {
+      "recall": 0.8250564334085779,
+      "precision": 0.9905149051490515,
+      "support": 886,
+      "correct": 731
+     },
+     "DoS_SlowHTTP": {
+      "recall": 1.0,
+      "precision": 0.9998863205759757,
+      "support": 26387,
+      "correct": 26387
+     },
+     "SQL_Injection": {
+      "recall": 0.2727272727272727,
+      "precision": 0.5,
+      "support": 11,
+      "correct": 3
+     }
+    },
+    "confusion": [
+     [
+      209579,
+      35,
+      7,
+      5,
+      10,
+      0,
+      7,
+      3,
+      2
+     ],
+     [
+      34,
+      35752,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      60,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      21,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      125536,
+      0,
+      0,
+      29,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      50,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      155,
+      0,
+      0,
+      0,
+      0,
+      0,
+      731,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26387,
+      0
+     ],
+     [
+      5,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+     ]
+    ]
+   }
+  }
+ }
+}

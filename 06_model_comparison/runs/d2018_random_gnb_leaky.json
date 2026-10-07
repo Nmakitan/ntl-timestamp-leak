@@ -1,0 +1,1007 @@
+{
+ "dataset": "d2018",
+ "split": "random",
+ "model": "gnb",
+ "variant": "leaky",
+ "params": "GaussianNB()",
+ "n_train": 600000,
+ "n_test": 1087225,
+ "n_features": 313,
+ "fit_seconds": 2.8,
+ "predict_seconds": 35.8,
+ "peak_rss_gb_self": 2.042356,
+ "warnings": [],
+ "n_warnings": 0,
+ "conditions": {
+  "leaky": {
+   "all": {
+    "n": 1087225,
+    "accuracy": 0.32907263905815265,
+    "macro_f1": 0.295876529148622,
+    "mean_attack_recall": 0.5734292599157578,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.033787555912609527,
+      "precision": 0.9998992595577495,
+      "support": 587524,
+      "correct": 19851
+     },
+     "Bot": {
+      "recall": 0.0032296399860188745,
+      "precision": 0.2321608040201005,
+      "support": 71525,
+      "correct": 231
+     },
+     "Brute_Force_Web": {
+      "recall": 0.007462686567164179,
+      "precision": 4.208931352329643e-05,
+      "support": 134,
+      "correct": 1
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.5517241379310345,
+      "precision": 0.007661000718218817,
+      "support": 58,
+      "correct": 32
+     },
+     "DDoS_HOIC": {
+      "recall": 0.6561061013046815,
+      "precision": 0.29798922357452,
+      "support": 250176,
+      "correct": 164142
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.9991296178607941,
+      "precision": 0.2890436089384135,
+      "support": 72382,
+      "correct": 72319
+     },
+     "DoS_HULK": {
+      "recall": 0.9467049725994456,
+      "precision": 0.9581033135655092,
+      "support": 79013,
+      "correct": 74802
+     },
+     "DoS_SlowHTTP": {
+      "recall": 1.0,
+      "precision": 0.619674980038514,
+      "support": 26387,
+      "correct": 26387
+     },
+     "SQL_Injection": {
+      "recall": 0.4230769230769231,
+      "precision": 9.421599444982142e-05,
+      "support": 26,
+      "correct": 11
+     }
+    },
+    "confusion": [
+     [
+      19851,
+      764,
+      23758,
+      4145,
+      314599,
+      88824,
+      3232,
+      16123,
+      116228
+     ],
+     [
+      1,
+      231,
+      0,
+      0,
+      71234,
+      0,
+      1,
+      0,
+      58
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      79,
+      0,
+      35,
+      0,
+      19
+     ],
+     [
+      1,
+      0,
+      0,
+      32,
+      23,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      164142,
+      86034,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      13,
+      72319,
+      0,
+      0,
+      50
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      731,
+      3022,
+      74802,
+      72,
+      386
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26387,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      11,
+      1,
+      3,
+      0,
+      11
+     ]
+    ]
+   },
+   "leaked_rows": {
+    "n": 398418,
+    "accuracy": 0.3837125832668203,
+    "macro_f1": 0.16256174136209667,
+    "mean_attack_recall": 0.3068181818181818,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.004393077921086774,
+      "precision": 0.9989154013015185,
+      "support": 209648,
+      "correct": 921
+     },
+     "Bot": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 35787,
+      "correct": 0
+     },
+     "Brute_Force_Web": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 62,
+      "correct": 0
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 22,
+      "correct": 0
+     },
+     "DDoS_HOIC": {
+      "recall": 1.0,
+      "precision": 0.5255964838844704,
+      "support": 125565,
+      "correct": 125565
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 50,
+      "correct": 0
+     },
+     "DoS_HULK": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 886,
+      "correct": 0
+     },
+     "DoS_SlowHTTP": {
+      "recall": 1.0,
+      "precision": 0.619674980038514,
+      "support": 26387,
+      "correct": 26387
+     },
+     "SQL_Injection": {
+      "recall": 0.45454545454545453,
+      "precision": 4.3140638481449525e-05,
+      "support": 11,
+      "correct": 5
+     }
+    },
+    "confusion": [
+     [
+      921,
+      113,
+      1,
+      0,
+      77108,
+      0,
+      0,
+      16123,
+      115382
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      35728,
+      0,
+      0,
+      0,
+      58
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      43,
+      0,
+      0,
+      0,
+      19
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      22,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      125565,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      50
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      428,
+      0,
+      0,
+      72,
+      386
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26387,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      5
+     ]
+    ]
+   }
+  },
+  "leaky_plus8y": {
+   "all": {
+    "n": 1087225,
+    "accuracy": 0.305562326105452,
+    "macro_f1": 0.21086555764948675,
+    "mean_attack_recall": 0.44842925991575777,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.035193455926906814,
+      "precision": 0.46979301569990684,
+      "support": 587524,
+      "correct": 20677
+     },
+     "Bot": {
+      "recall": 0.0032296399860188745,
+      "precision": 0.23123123123123124,
+      "support": 71525,
+      "correct": 231
+     },
+     "Brute_Force_Web": {
+      "recall": 0.007462686567164179,
+      "precision": 4.209108510817409e-05,
+      "support": 134,
+      "correct": 1
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.5517241379310345,
+      "precision": 0.007659167065581618,
+      "support": 58,
+      "correct": 32
+     },
+     "DDoS_HOIC": {
+      "recall": 0.6561061013046815,
+      "precision": 0.29798922357452,
+      "support": 250176,
+      "correct": 164142
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.9991296178607941,
+      "precision": 0.2890436089384135,
+      "support": 72382,
+      "correct": 72319
+     },
+     "DoS_HULK": {
+      "recall": 0.9467049725994456,
+      "precision": 0.9581033135655092,
+      "support": 79013,
+      "correct": 74802
+     },
+     "DoS_SlowHTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 26387,
+      "correct": 0
+     },
+     "SQL_Injection": {
+      "recall": 0.4230769230769231,
+      "precision": 8.137840217206353e-05,
+      "support": 26,
+      "correct": 11
+     }
+    },
+    "confusion": [
+     [
+      20677,
+      768,
+      23757,
+      4146,
+      314599,
+      88824,
+      3232,
+      0,
+      131521
+     ],
+     [
+      1,
+      231,
+      0,
+      0,
+      71234,
+      0,
+      1,
+      0,
+      58
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      79,
+      0,
+      35,
+      0,
+      19
+     ],
+     [
+      1,
+      0,
+      0,
+      32,
+      23,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      164142,
+      86034,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      13,
+      72319,
+      0,
+      0,
+      50
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      731,
+      3022,
+      74802,
+      0,
+      458
+     ],
+     [
+      23334,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3053
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      11,
+      1,
+      3,
+      0,
+      11
+     ]
+    ]
+   },
+   "leaked_rows": {
+    "n": 398418,
+    "accuracy": 0.3195563453458428,
+    "macro_f1": 0.07822188749443301,
+    "mean_attack_recall": 0.18181818181818182,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.008333015339998473,
+      "precision": 0.06965154293915955,
+      "support": 209648,
+      "correct": 1747
+     },
+     "Bot": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 35787,
+      "correct": 0
+     },
+     "Brute_Force_Web": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 62,
+      "correct": 0
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 22,
+      "correct": 0
+     },
+     "DDoS_HOIC": {
+      "recall": 1.0,
+      "precision": 0.5255964838844704,
+      "support": 125565,
+      "correct": 125565
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 50,
+      "correct": 0
+     },
+     "DoS_HULK": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 886,
+      "correct": 0
+     },
+     "DoS_SlowHTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 26387,
+      "correct": 0
+     },
+     "SQL_Injection": {
+      "recall": 0.45454545454545453,
+      "precision": 3.7225092690480796e-05,
+      "support": 11,
+      "correct": 5
+     }
+    },
+    "confusion": [
+     [
+      1747,
+      117,
+      0,
+      1,
+      77108,
+      0,
+      0,
+      0,
+      130675
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      35728,
+      0,
+      0,
+      0,
+      58
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      43,
+      0,
+      0,
+      0,
+      19
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      22,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      125565,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      50
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      428,
+      0,
+      0,
+      0,
+      458
+     ],
+     [
+      23334,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3053
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      5
+     ]
+    ]
+   }
+  },
+  "leaky_zero": {
+   "all": {
+    "n": 1087225,
+    "accuracy": 0.30541700200050587,
+    "macro_f1": 0.2057355068606442,
+    "mean_attack_recall": 0.4243907983772962,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.034933041033217364,
+      "precision": 0.4700547374206995,
+      "support": 587524,
+      "correct": 20524
+     },
+     "Bot": {
+      "recall": 0.0032296399860188745,
+      "precision": 0.23595505617977527,
+      "support": 71525,
+      "correct": 231
+     },
+     "Brute_Force_Web": {
+      "recall": 0.007462686567164179,
+      "precision": 4.208931352329643e-05,
+      "support": 134,
+      "correct": 1
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.5517241379310345,
+      "precision": 0.007532956685499058,
+      "support": 58,
+      "correct": 32
+     },
+     "DDoS_HOIC": {
+      "recall": 0.6561061013046815,
+      "precision": 0.2394663935610089,
+      "support": 250176,
+      "correct": 164142
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.9991296178607941,
+      "precision": 0.2890436089384135,
+      "support": 72382,
+      "correct": 72319
+     },
+     "DoS_HULK": {
+      "recall": 0.9467049725994456,
+      "precision": 0.9581033135655092,
+      "support": 79013,
+      "correct": 74802
+     },
+     "DoS_SlowHTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 26387,
+      "correct": 0
+     },
+     "SQL_Injection": {
+      "recall": 0.23076923076923078,
+      "precision": 0.007033997655334115,
+      "support": 26,
+      "correct": 6
+     }
+    },
+    "confusion": [
+     [
+      20524,
+      748,
+      23758,
+      4216,
+      445376,
+      88824,
+      3232,
+      0,
+      846
+     ],
+     [
+      0,
+      231,
+      0,
+      0,
+      71293,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      98,
+      0,
+      35,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      32,
+      23,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      164142,
+      86034,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      63,
+      72319,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      1189,
+      3022,
+      74802,
+      0,
+      0
+     ],
+     [
+      23138,
+      0,
+      0,
+      0,
+      3249,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      16,
+      1,
+      3,
+      0,
+      6
+     ]
+    ]
+   },
+   "leaked_rows": {
+    "n": 398418,
+    "accuracy": 0.3191597769177095,
+    "macro_f1": 0.05742063207789905,
+    "mean_attack_recall": 0.125,
+    "n_attack_classes_in_mean": 8,
+    "per_class": {
+     "Benign": {
+      "recall": 0.007603220636495459,
+      "precision": 0.06445091379589196,
+      "support": 209648,
+      "correct": 1594
+     },
+     "Bot": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 35787,
+      "correct": 0
+     },
+     "Brute_Force_Web": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 62,
+      "correct": 0
+     },
+     "Brute_Force_XSS": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 22,
+      "correct": 0
+     },
+     "DDoS_HOIC": {
+      "recall": 1.0,
+      "precision": 0.3361694380710918,
+      "support": 125565,
+      "correct": 125565
+     },
+     "DDoS_LOIC_HTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 50,
+      "correct": 0
+     },
+     "DoS_HULK": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 886,
+      "correct": 0
+     },
+     "DoS_SlowHTTP": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 26387,
+      "correct": 0
+     },
+     "SQL_Injection": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "support": 11,
+      "correct": 0
+     }
+    },
+    "confusion": [
+     [
+      1594,
+      97,
+      1,
+      71,
+      207885,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      35787,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      62,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      22,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      125565,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      50,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      886,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      23138,
+      0,
+      0,
+      0,
+      3249,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      11,
+      0,
+      0,
+      0,
+      0
+     ]
+    ]
+   }
+  }
+ }
+}

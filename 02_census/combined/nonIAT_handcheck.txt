@@ -1,0 +1,31 @@
+== BCCC-CIC-IDS-2017
+  friday_benign: bytes_rate n=24 range 1.465e+09..2.024e+09, within 1 day of flow start: 0; median packets 2, median duration 0.0s
+  friday_benign: fwd_bytes_rate n=23 range 1.465e+09..2.024e+09, within 1 day of flow start: 0; median packets 2, median duration 0.0s
+  friday_benign: bwd_bytes_rate n=1 range 1.518e+09..1.518e+09, within 1 day of flow start: 0; median packets 2, median duration 0.0s
+  tuesday_benign: total_payload_bytes n=1 range 1.868e+09..1.868e+09, within 1 day of flow start: 0; median packets 1526795, median duration 576.4s
+  tuesday_benign: bwd_total_payload_bytes n=1 range 1.868e+09..1.868e+09, within 1 day of flow start: 0; median packets 1526795, median duration 576.4s
+  tuesday_benign: bytes_rate n=2 range 1.445e+09..1.884e+09, within 1 day of flow start: 0; median packets 2, median duration 0.0s
+  tuesday_benign: bwd_bytes_rate n=1 range 1.884e+09..1.884e+09, within 1 day of flow start: 0; median packets 2, median duration 0.0s
+  tuesday_benign: bwd_bulk_total_size n=1 range 1.737e+09..1.737e+09, within 1 day of flow start: 0; median packets 1526795, median duration 576.4s
+  wednesday_benign: bytes_rate n=3 range 1.469e+09..1.531e+09, within 1 day of flow start: 0; median packets 2, median duration 0.0s
+  wednesday_benign: bwd_bytes_rate n=3 range 1.469e+09..1.531e+09, within 1 day of flow start: 0; median packets 2, median duration 0.0s
+  monday_benign: bytes_rate n=3 range 1.518e+09..1.823e+09, within 1 day of flow start: 0; median packets 2, median duration 0.0s
+  monday_benign: bwd_bytes_rate n=2 range 1.598e+09..1.823e+09, within 1 day of flow start: 0; median packets 2, median duration 0.0s
+  monday_benign: fwd_bytes_rate n=1 range 1.518e+09..1.518e+09, within 1 day of flow start: 0; median packets 3, median duration 0.0s
+== BCCC-cPacket-Cloud-DDoS-2024
+  Thursday_14_Dec_2023: total_payload_bytes n=5 range 1.473e+09..2.092e+09, within 1 day of flow start: 0; median packets 1245708, median duration 65.0s
+  Thursday_14_Dec_2023: fwd_total_payload_bytes n=3 range 1.481e+09..1.683e+09, within 1 day of flow start: 0; median packets 1245708, median duration 65.0s
+  Thursday_14_Dec_2023: bwd_total_payload_bytes n=2 range 1.473e+09..2.092e+09, within 1 day of flow start: 0; median packets 1457826, median duration 51.5s
+  Thursday_14_Dec_2023: fwd_bulk_total_size n=3 range 1.481e+09..1.683e+09, within 1 day of flow start: 0; median packets 1245708, median duration 65.0s
+  Saturday_16_Dec_2023: total_payload_bytes n=8 range 1.465e+09..2.189e+09, within 1 day of flow start: 0; median packets 1369476, median duration 93.7s
+  Saturday_16_Dec_2023: fwd_total_payload_bytes n=2 range 1.465e+09..1.741e+09, within 1 day of flow start: 0; median packets 1270464, median duration 75.4s
+  Saturday_16_Dec_2023: bwd_total_payload_bytes n=6 range 1.594e+09..2.189e+09, within 1 day of flow start: 0; median packets 1381042, median duration 126.7s
+  Saturday_16_Dec_2023: fwd_bulk_total_size n=2 range 1.465e+09..1.74e+09, within 1 day of flow start: 0; median packets 1270464, median duration 75.4s
+  Saturday_16_Dec_2023: bytes_rate n=1 range 1.735e+09..1.735e+09, within 1 day of flow start: 0; median packets 7, median duration 0.0s
+  Saturday_16_Dec_2023: fwd_bytes_rate n=1 range 1.735e+09..1.735e+09, within 1 day of flow start: 0; median packets 7, median duration 0.0s
+  Saturday_16_Dec_2023: bwd_bytes_rate n=1 range 1.518e+09..1.518e+09, within 1 day of flow start: 0; median packets 4, median duration 0.0s
+  Saturday_16_Dec_2023: avg_fwd_bulk_rate n=2 range 1.46e+09..1.735e+09, within 1 day of flow start: 0; median packets 8, median duration 0.0s
+  Monday_18_Dec_2023: total_payload_bytes n=4 range 1.579e+09..1.896e+09, within 1 day of flow start: 0; median packets 1415504, median duration 153.0s
+  Monday_18_Dec_2023: bwd_total_payload_bytes n=4 range 1.579e+09..1.896e+09, within 1 day of flow start: 0; median packets 1415504, median duration 153.0s
+  Tuesday_19_Dec_2023: total_payload_bytes n=2 range 1.967e+09..2.097e+09, within 1 day of flow start: 0; median packets 1642070, median duration 305.5s
+  Tuesday_19_Dec_2023: bwd_total_payload_bytes n=2 range 1.967e+09..2.097e+09, within 1 day of flow start: 0; median packets 1642070, median duration 305.5s

@@ -1,0 +1,3 @@
+random_fixB_s2: train 2216899 test 738622 dropped {'train': 1044774, 'test': 348603}
+random_fixB_s2: fit 744s, rss peak 5.65GB
+random_fixB_s2: acc=1.0000 mF1=0.9860 | leaked acc=0.9998 | thresholds>1e9: 0

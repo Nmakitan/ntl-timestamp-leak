@@ -1,0 +1,1 @@
+cpacket temporal mlp leaky: leaky acc=0.8087 leaked=0.8779 | leaky_plus8y acc=0.8062 leaked=0.8740 | leaky_zero acc=0.7723 leaked=0.8223 | fit 188s, warnings 0

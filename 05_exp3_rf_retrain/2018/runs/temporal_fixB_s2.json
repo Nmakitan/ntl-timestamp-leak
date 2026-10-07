@@ -1,0 +1,419 @@
+{
+ "experiment": 3,
+ "split": "temporal",
+ "variant": "fixB",
+ "seed": 2,
+ "params": {
+  "bootstrap": true,
+  "ccp_alpha": 0.0,
+  "class_weight": "balanced",
+  "criterion": "gini",
+  "max_depth": 30,
+  "max_features": "sqrt",
+  "max_leaf_nodes": null,
+  "max_samples": null,
+  "min_impurity_decrease": 0.0,
+  "min_samples_leaf": 10,
+  "min_samples_split": 2,
+  "min_weight_fraction_leaf": 0.0,
+  "monotonic_cst": null,
+  "n_estimators": 200,
+  "n_jobs": 2,
+  "oob_score": false,
+  "random_state": 2,
+  "verbose": 0,
+  "warm_start": false
+ },
+ "n_train": 2179323,
+ "n_test": 776198,
+ "fixB_dropped_rows": {
+  "train": 1082352,
+  "test": 311025
+ },
+ "fixB_rule": "packets_count == 1 (column present in feature_order.json)",
+ "assemble_seconds": 136.0,
+ "fit_seconds": 717.6,
+ "predict_seconds": 54.9,
+ "worker_peak_rss_gb": 5.8071,
+ "leak_check": {
+  "thresholds_above_1e9": 0,
+  "of_which_on_IAT_features": 0,
+  "total_split_nodes": 18899,
+  "total_nodes": 37998,
+  "FLAG": false
+ },
+ "top25_importances": {
+  "fwd_init_win_bytes": 0.02719024010368925,
+  "bwd_avg_segment_size": 0.019669282170893507,
+  "fwd_rst_flag_percentage_in_fwd_packets": 0.019303485907008366,
+  "payload_bytes_cov": 0.018571957739231648,
+  "fwd_rst_flag_percentage_in_total": 0.016252070149966834,
+  "max_header_bytes": 0.015598729443982122,
+  "variance_fwd_packets_delta_len": 0.014175101239386898,
+  "variance_fwd_payload_bytes_delta_len": 0.0141117867685836,
+  "mean_bwd_packets_delta_len": 0.01319791336503261,
+  "median_packets_delta_len": 0.013025747085291249,
+  "bwd_max_header_bytes": 0.012559199345810559,
+  "fwd_mean_header_bytes": 0.012211613700272326,
+  "bwd_mean_header_bytes": 0.011684543367223004,
+  "fwd_mode_header_bytes": 0.011349820232610863,
+  "std_fwd_packets_delta_len": 0.01133006794609092,
+  "std_bwd_payload_bytes_delta_len": 0.011125999811404693,
+  "std_fwd_payload_bytes_delta_len": 0.011048408673099171,
+  "max_fwd_packets_delta_len": 0.010974736758329176,
+  "bwd_payload_bytes_median": 0.010749026765744407,
+  "fwd_packets_rate": 0.01062274098224532,
+  "max_fwd_payload_bytes_delta_len": 0.010323460555071894,
+  "fwd_bytes_rate": 0.010255312061988433,
+  "packet_IAT_total": 0.010139880513589097,
+  "packets_rate": 0.01004877457688093,
+  "fwd_payload_bytes_variance": 0.009868599472314164
+ },
+ "all": {
+  "n": 776198,
+  "accuracy": 0.9990530766634287,
+  "macro_f1": 0.9697348820210147,
+  "per_class": {
+   "Benign": {
+    "precision": 0.9982672169565544,
+    "recall": 0.9999538762183354,
+    "f1": 0.9991098347494318,
+    "support": 411935,
+    "correct": 411916
+   },
+   "Bot": {
+    "precision": 1.0,
+    "recall": 0.9925892906892517,
+    "f1": 0.9962808646290652,
+    "support": 35894,
+    "correct": 35628
+   },
+   "Brute_Force_Web": {
+    "precision": 0.9295774647887324,
+    "recall": 0.9705882352941176,
+    "f1": 0.9496402877697842,
+    "support": 68,
+    "correct": 66
+   },
+   "Brute_Force_XSS": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 28,
+    "correct": 28
+   },
+   "DDoS_HOIC": {
+    "precision": 0.9999934511686389,
+    "recall": 1.0,
+    "f1": 0.9999967255735976,
+    "support": 152698,
+    "correct": 152698
+   },
+   "DDoS_LOIC_HTTP": {
+    "precision": 1.0,
+    "recall": 0.9985493631013236,
+    "f1": 0.9992741550819514,
+    "support": 72382,
+    "correct": 72277
+   },
+   "DoS_HULK": {
+    "precision": 1.0,
+    "recall": 0.9955465270724275,
+    "f1": 0.997768294115344,
+    "support": 76794,
+    "correct": 76452
+   },
+   "DoS_SlowHTTP": {
+    "precision": 0.999659039248371,
+    "recall": 1.0,
+    "f1": 0.9998294905556714,
+    "support": 26387,
+    "correct": 26387
+   },
+   "SQL_Injection": {
+    "precision": 0.6875,
+    "recall": 0.9166666666666666,
+    "f1": 0.7857142857142857,
+    "support": 12,
+    "correct": 11
+   }
+  },
+  "confusion": [
+   [
+    411916,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    9,
+    5
+   ],
+   [
+    266,
+    35628,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    0,
+    66,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    28,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    152698,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    104,
+    0,
+    0,
+    0,
+    1,
+    72277,
+    0,
+    0,
+    0
+   ],
+   [
+    342,
+    0,
+    0,
+    0,
+    0,
+    0,
+    76452,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    26387,
+    0
+   ],
+   [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    11
+   ]
+  ]
+ },
+ "leaked_rows": {
+  "n": 48668,
+  "accuracy": 0.9895208350456152,
+  "macro_f1": 0.2808658469117097,
+  "per_class": {
+   "Benign": {
+    "precision": 0.9773251866938222,
+    "recall": 0.9995833911956673,
+    "f1": 0.9883289853082521,
+    "support": 21603,
+    "correct": 21594
+   },
+   "Bot": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 199,
+    "correct": 0
+   },
+   "Brute_Force_Web": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0,
+    "correct": 0
+   },
+   "Brute_Force_XSS": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0,
+    "correct": 0
+   },
+   "DDoS_HOIC": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0,
+    "correct": 0
+   },
+   "DDoS_LOIC_HTTP": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0,
+    "correct": 0
+   },
+   "DoS_HULK": {
+    "precision": 1.0,
+    "recall": 0.3695198329853862,
+    "f1": 0.5396341463414634,
+    "support": 479,
+    "correct": 177
+   },
+   "DoS_SlowHTTP": {
+    "precision": 0.999659039248371,
+    "recall": 1.0,
+    "f1": 0.9998294905556714,
+    "support": 26387,
+    "correct": 26387
+   },
+   "SQL_Injection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0,
+    "correct": 0
+   }
+  },
+  "confusion": [
+   [
+    21594,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    9,
+    0
+   ],
+   [
+    199,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    302,
+    0,
+    0,
+    0,
+    0,
+    0,
+    177,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    26387,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "time_v": {
+  "max_rss_gb": 5.8071,
+  "wall": "15:11.20",
+  "signal": null
+ }
+}

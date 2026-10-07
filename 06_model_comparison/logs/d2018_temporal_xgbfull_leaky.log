@@ -1,0 +1,1 @@
+d2018 temporal xgbfull leaky: leaky acc=0.9765 leaked=0.9344 | leaky_plus8y acc=0.9030 leaked=0.7123 | leaky_zero acc=0.8731 leaked=0.6221 | fit 1440s, warnings 0

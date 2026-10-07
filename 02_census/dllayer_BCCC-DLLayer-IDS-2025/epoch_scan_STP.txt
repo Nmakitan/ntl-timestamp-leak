@@ -1,0 +1,21 @@
+rows 153486; labels {'Benign': 136843, 'STP attack': 16643}
+epoch-range hits:
+  arp_over_dhcp_ratio [s]: 375 rows, e.g. [1500000000.0, 1400000000.0, 2000000000.0] -> ['2017-07-14 02:40:00', '2014-05-13 16:53:20', '2033-05-18 03:33:20']
+  stp_over_cdp_ratio [s]: 160 rows, e.g. [2000000000.0, 1500000000.0, 1500000000.0] -> ['2033-05-18 03:33:20', '2017-07-14 02:40:00', '2017-07-14 02:40:00']
+  dhcp_mean_transaction_id [s]: 148 rows, e.g. [1652148087.0, 1610033341.0, 1941267726.0] -> ['2022-05-10 02:01:27', '2021-01-07 15:29:01', '2031-07-08 09:02:06']
+  dhcp_min_transaction_id [s]: 144 rows, e.g. [1652148087.0, 1610033341.0, 1935215952.0] -> ['2022-05-10 02:01:27', '2021-01-07 15:29:01', '2031-04-29 07:59:12']
+  dhcp_max_transaction_id [s]: 136 rows, e.g. [1569800933.0, 1569800933.0, 1652148087.0] -> ['2019-09-29 23:48:53', '2019-09-29 23:48:53', '2022-05-10 02:01:27']
+  sum_frame_len_div_time [s]: 67 rows, e.g. [2170971750.4, 2170971750.4, 2031333691.0769231] -> ['2038-10-17 23:42:30.400000095', '2038-10-17 23:42:30.400000095', '2034-05-15 19:21:31.076923132']
+  dhcp_sum_transaction_id [s]: 51 rows, e.g. [1652148087.0, 1893692372.0, 2056458709.0] -> ['2022-05-10 02:01:27', '2030-01-03 17:39:32', '2035-03-02 14:31:49']
+  cdp_over_stp_ratio [s]: 17 rows, e.g. [1600000000.0, 1400000000.0, 2100000000.0] -> ['2020-09-13 12:26:40', '2014-05-13 16:53:20', '2036-07-18 13:20:00']
+non-numeric columns: {'connection': ['TCP:74:5d:22:93:1f:9f:2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1:51307:f6:02:28:6e:11:23:2603:1063:27:1::14:443', 'TCP:74:5d:22:93:1f:9f:2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1:51309:f6:02:28:6e:11:23:2603:1063:27:1::14:443', 'TCP:74:5d:22:93:1f:9f:2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1:51310:f6:02:28:6e:11:23:2603:1063:27:1::14:443', 'TCP:74:5d:22:93:1f:9f:2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1:51311:f6:02:28:6e:11:23:2603:1063:27:1::14:443'], 'tcp_stream': ['TCP:74:5d:22:93:1f:9f:2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1:51307:f6:02:28:6e:11:23:2603:1063:27:1::14:443', 'TCP:74:5d:22:93:1f:9f:2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1:51309:f6:02:28:6e:11:23:2603:1063:27:1::14:443', 'TCP:74:5d:22:93:1f:9f:2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1:51310:f6:02:28:6e:11:23:2603:1063:27:1::14:443', 'TCP:74:5d:22:93:1f:9f:2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1:51311:f6:02:28:6e:11:23:2603:1063:27:1::14:443'], 'protocol': ['TCP', 'UDP', 'STP', 'ARP'], 'dst_mac_addr': ['74:5d:22:93:1f:9f', 'f6:02:28:6e:11:23', 'cc:96:e5:89:e8:f0', '74:5d:22:93:1e:03'], 'dst_mac_addr_vendor': ['Unknown', 'Broadcast', 'Spanning Tree Multicast', 'IPv4 Multicast'], 'dst_mac_addr_device': ['Unknown'], 'dst_mac_addr_vendor_name': ['Unknown', 'Broadcast', 'Spanning Tree Multicast', 'IPv4 Multicast'], 'dst_mac_oui': ['745D22', 'F60228', 'CC96E5', 'A86E84'], 'src_mac_addr': ['f6:02:28:6e:11:23', '74:5d:22:93:1f:9f', 'cc:96:e5:89:e8:f0', '-100'], 'src_mac_addr_vendor': ['Unknown'], 'src_mac_addr_device': ['Unknown'], 'src_mac_addr_vendor_name': ['Unknown'], 'src_mac_oui': ['F60228', '745D22', 'CC96E5', 'Unknown'], 'dst_ip_addr': ['2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1', '2603:1063:27:1::14', '2604:5580:22::acb2:f0a1', '2605:8d80:6a29:5c3f:b118:4737:5324:5401'], 'src_ip_addr': ['2603:1063:27:1::14', '2605:8d80:6a29:5c3f:6570:e86b:fb98:b0d1', '2604:5580:22::acb2:f0a1', '2604:5580:22::14bd:ad04'], 'label': ['Benign', 'STP attack']}
+
+Capture-period check (values between 2025-07-01 and 2025-09-01 UTC, i.e. near the Jul-Aug 2025 captures):
+  arp_over_dhcp_ratio: 375 in epoch range, 0 in capture period, distinct values 9
+  stp_over_cdp_ratio: 160 in epoch range, 0 in capture period, distinct values 8
+  dhcp_mean_transaction_id: 148 in epoch range, 0 in capture period, distinct values 134
+  dhcp_min_transaction_id: 144 in epoch range, 0 in capture period, distinct values 127
+  dhcp_max_transaction_id: 136 in epoch range, 0 in capture period, distinct values 121
+  sum_frame_len_div_time: 67 in epoch range, 0 in capture period, distinct values 33
+  dhcp_sum_transaction_id: 51 in epoch range, 0 in capture period, distinct values 51
+  cdp_over_stp_ratio: 17 in epoch range, 0 in capture period, distinct values 6

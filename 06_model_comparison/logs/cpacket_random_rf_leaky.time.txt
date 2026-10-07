@@ -1,0 +1,23 @@
+	Command being timed: "python3 mc_run.py cpacket random rf leaky"
+	User time (seconds): 319.47
+	System time (seconds): 1.73
+	Percent of CPU this job got: 197%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:42.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2444548
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 17
+	Minor (reclaiming a frame) page faults: 893167
+	Voluntary context switches: 22820
+	Involuntary context switches: 1334
+	Swaps: 0
+	File system inputs: 609704
+	File system outputs: 632
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

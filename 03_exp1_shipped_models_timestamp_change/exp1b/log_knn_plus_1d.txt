@@ -1,0 +1,7 @@
+knn plus_1d 50/6854 11s rss=0.82GB
+knn plus_1d 1050/6854 236s rss=0.82GB
+knn plus_1d 2050/6854 463s rss=0.82GB
+knn plus_1d 3050/6854 689s rss=0.82GB
+knn plus_1d 4050/6854 916s rss=0.82GB
+knn plus_1d 5050/6854 1144s rss=0.82GB
+knn plus_1d 6050/6854 1371s rss=0.82GB

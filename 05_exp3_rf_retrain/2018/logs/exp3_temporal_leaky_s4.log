@@ -1,0 +1,3 @@
+temporal_leaky_s4: train 3261675 test 1087223 dropped {}
+temporal_leaky_s4: fit 1350s, rss peak 5.53GB
+temporal_leaky_s4: acc=0.8919 mF1=0.7652 | leaked acc=0.6736 | thresholds>1e9: 18134

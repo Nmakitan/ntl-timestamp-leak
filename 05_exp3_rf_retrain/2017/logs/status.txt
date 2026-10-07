@@ -1,0 +1,13 @@
+2026-10-02 13:05:13 start random_leaky_s0
+2026-10-02 13:09:30 end random_leaky_s0 rc=0 peak_rss_kb=2441700
+2026-10-02 13:09:30 start random_fixA_s0
+2026-10-02 13:13:37 end random_fixA_s0 rc=0 peak_rss_kb=2421236
+2026-10-02 13:13:37 start temporal_leaky_s0
+2026-10-02 13:18:09 end temporal_leaky_s0 rc=0 peak_rss_kb=2319292
+2026-10-02 13:18:09 start temporal_fixA_s0
+2026-10-02 13:22:18 end temporal_fixA_s0 rc=0 peak_rss_kb=2323816
+2026-10-02 13:22:18 start random_fixB_s0
+2026-10-02 13:25:52 end random_fixB_s0 rc=0 peak_rss_kb=2280316
+2026-10-02 13:25:52 start temporal_fixB_s0
+2026-10-02 13:29:46 end temporal_fixB_s0 rc=0 peak_rss_kb=2063784
+2026-10-02 13:29:46 ALL DONE

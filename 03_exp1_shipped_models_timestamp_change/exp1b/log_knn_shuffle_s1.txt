@@ -1,0 +1,7 @@
+knn shuffle_s1 50/6854 12s rss=0.82GB
+knn shuffle_s1 1050/6854 242s rss=0.82GB
+knn shuffle_s1 2050/6854 471s rss=0.82GB
+knn shuffle_s1 3050/6854 701s rss=0.82GB
+knn shuffle_s1 4050/6854 930s rss=0.82GB
+knn shuffle_s1 5050/6854 1159s rss=0.82GB
+knn shuffle_s1 6050/6854 1388s rss=0.82GB

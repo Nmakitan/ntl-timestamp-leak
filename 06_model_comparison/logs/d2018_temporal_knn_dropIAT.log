@@ -1,0 +1,12 @@
+05:34:20 predicted 100,000 of 1,087,223 rows
+05:39:45 predicted 200,000 of 1,087,223 rows
+05:45:08 predicted 300,000 of 1,087,223 rows
+05:50:33 predicted 400,000 of 1,087,223 rows
+05:56:00 predicted 500,000 of 1,087,223 rows
+06:01:25 predicted 600,000 of 1,087,223 rows
+06:06:50 predicted 700,000 of 1,087,223 rows
+06:12:16 predicted 800,000 of 1,087,223 rows
+06:17:40 predicted 900,000 of 1,087,223 rows
+06:23:02 predicted 1,000,000 of 1,087,223 rows
+06:27:43 predicted 1,087,223 of 1,087,223 rows
+d2018 temporal knn dropIAT: dropIAT acc=0.9036 leaked=0.7210 | fit 3s, warnings 0

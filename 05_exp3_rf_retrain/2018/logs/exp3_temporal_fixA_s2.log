@@ -1,0 +1,3 @@
+temporal_fixA_s2: train 3261675 test 1087223 dropped {}
+temporal_fixA_s2: fit 1100s, rss peak 6.43GB
+temporal_fixA_s2: acc=0.9645 mF1=0.7896 | leaked acc=0.8934 | thresholds>1e9: 0

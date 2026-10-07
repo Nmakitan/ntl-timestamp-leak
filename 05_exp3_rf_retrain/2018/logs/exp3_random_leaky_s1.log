@@ -1,0 +1,3 @@
+random_leaky_s1: train 3261673 test 1087225 dropped {}
+random_leaky_s1: fit 1192s, rss peak 6.59GB
+random_leaky_s1: acc=0.9971 mF1=0.8224 | leaked acc=0.9922 | thresholds>1e9: 21525

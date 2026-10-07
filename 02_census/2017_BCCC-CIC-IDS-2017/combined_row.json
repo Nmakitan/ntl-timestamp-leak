@@ -1,0 +1,11 @@
+{
+ "dataset": "BCCC-CIC-IDS-2017",
+ "ntlflowlyzer": "yes",
+ "columns": 122,
+ "rows": 2438052,
+ "leaked_rows": 939324,
+ "leaked_%": 38.53,
+ "rule_violations": 0,
+ "timestamp_offset_h": 4,
+ "on_capture_days": "100.00% of leaked rows"
+}

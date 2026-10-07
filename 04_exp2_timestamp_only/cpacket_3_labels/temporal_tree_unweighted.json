@@ -1,0 +1,87 @@
+{
+ "dataset": "BCCC-cPacket-Cloud-DDoS-2024",
+ "class_mode": "label",
+ "split": "temporal",
+ "model": "tree_unweighted",
+ "n_train": 525580,
+ "n_test": 175194,
+ "seconds": 0.16,
+ "all": {
+  "n": 175194,
+  "accuracy": 0.5073632658652694,
+  "macro_f1": 0.2885715412540263,
+  "per_class": {
+   "Attack": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 57117
+   },
+   "Benign": {
+    "precision": 0.5668638579689074,
+    "recall": 0.8227897116194423,
+    "support": 103301
+   },
+   "Suspicious": {
+    "precision": 0.15411419973073573,
+    "recall": 0.2634001082837033,
+    "support": 14776
+   }
+  },
+  "confusion": [
+   [
+    0,
+    54061,
+    3056
+   ],
+   [
+    0,
+    84995,
+    18306
+   ],
+   [
+    1,
+    10883,
+    3892
+   ]
+  ]
+ },
+ "leaked_rows": {
+  "n": 91828,
+  "accuracy": 0.6512610532735114,
+  "macro_f1": 0.3537687423997782,
+  "per_class": {
+   "Attack": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 13716
+   },
+   "Benign": {
+    "precision": 0.839860003304643,
+    "recall": 0.7533482443612062,
+    "support": 74218
+   },
+   "Suspicious": {
+    "precision": 0.15411419973073573,
+    "recall": 0.9994863893168978,
+    "support": 3894
+   }
+  },
+  "confusion": [
+   [
+    0,
+    10660,
+    3056
+   ],
+   [
+    0,
+    55912,
+    18306
+   ],
+   [
+    1,
+    1,
+    3892
+   ]
+  ]
+ }
+}

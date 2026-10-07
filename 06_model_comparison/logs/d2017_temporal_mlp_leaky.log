@@ -1,0 +1,1 @@
+d2017 temporal mlp leaky: leaky acc=0.9454 leaked=0.8726 | leaky_plus8y acc=0.9454 leaked=0.8725 | leaky_zero acc=0.8681 leaked=0.6759 | fit 209s, warnings 0

@@ -1,0 +1,5 @@
+{"pcap_file_address": "repro.pcap", "output_file_address": "repro_out.csv",
+ "label": "Repro", "number_of_threads": 3,
+ "feature_extractor_min_flows": 1, "writer_min_rows": 1,
+ "check_flows_ending_min_flows": 1, "capturer_updating_flows_min_value": 1,
+ "activity_timeout": 300, "max_flow_duration": 3600}

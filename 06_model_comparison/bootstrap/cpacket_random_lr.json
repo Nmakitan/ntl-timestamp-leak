@@ -1,0 +1,393 @@
+{
+ "dataset": "cpacket",
+ "split": "random",
+ "model": "lr",
+ "B": 1000,
+ "conditions": [
+  "leaky",
+  "leaky_plus8y",
+  "leaky_zero",
+  "fixA"
+ ],
+ "n_tuples": 2020,
+ "attack_classes_in_mean": {
+  "all": [
+   "Attack / Attack-Killall-v2",
+   "Attack / Attack-Killer-TCP",
+   "Attack / Attack-TCP-BYPass-V1",
+   "Attack / Attack-TCP-Control",
+   "Attack / Attack-TCP-Flag-ACK",
+   "Attack / Attack-TCP-Flag-ACK-PSH",
+   "Attack / Attack-TCP-Flag-MIX",
+   "Attack / Attack-TCP-Flag-OSYN",
+   "Attack / Attack-TCP-Flag-OSYNP",
+   "Attack / Attack-TCP-Flag-RST-ACK",
+   "Attack / Attack-TCP-Flag-SYN",
+   "Attack / Attack-TCP-Flag-SYN-ACK",
+   "Attack / Attack-TCP-Flag-SYN-TFO",
+   "Attack / Attack-TCP-Flag-SYN-TIME",
+   "Attack / Attack-TCP-IGMP",
+   "Attack / Attack-TCP-SYN",
+   "Attack / Attack-TCP-Valid-SYN"
+  ],
+  "leaked_rows": [
+   "Attack / Attack-Killall-v2",
+   "Attack / Attack-Killer-TCP",
+   "Attack / Attack-TCP-BYPass-V1",
+   "Attack / Attack-TCP-Control",
+   "Attack / Attack-TCP-Flag-ACK",
+   "Attack / Attack-TCP-Flag-ACK-PSH",
+   "Attack / Attack-TCP-Flag-MIX",
+   "Attack / Attack-TCP-Flag-OSYN",
+   "Attack / Attack-TCP-Flag-OSYNP",
+   "Attack / Attack-TCP-Flag-RST-ACK",
+   "Attack / Attack-TCP-Flag-SYN",
+   "Attack / Attack-TCP-Flag-SYN-ACK",
+   "Attack / Attack-TCP-Flag-SYN-TFO",
+   "Attack / Attack-TCP-Flag-SYN-TIME",
+   "Attack / Attack-TCP-IGMP",
+   "Attack / Attack-TCP-SYN",
+   "Attack / Attack-TCP-Valid-SYN"
+  ]
+ },
+ "cond": {
+  "leaky": {
+   "all": {
+    "accuracy": {
+     "point": 0.5832106122355788,
+     "ci95": [
+      0.5809672420288367,
+      0.5853627978127105
+     ]
+    },
+    "macro_f1": {
+     "point": 0.2714081689764252,
+     "ci95": [
+      0.26730118058180735,
+      0.27522281506962376
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.25844591243036197,
+     "ci95": [
+      0.25116141320460206,
+      0.2654501193743149
+     ]
+    }
+   },
+   "leaked_rows": {
+    "accuracy": {
+     "point": 0.6118767663375319,
+     "ci95": [
+      0.6091417418553098,
+      0.6146204769113004
+     ]
+    },
+    "macro_f1": {
+     "point": 0.15454055542129458,
+     "ci95": [
+      0.15094668013744814,
+      0.1580957437885386
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.10602204134086458,
+     "ci95": [
+      0.10015975912777315,
+      0.11215890109131381
+     ]
+    }
+   }
+  },
+  "leaky_plus8y": {
+   "all": {
+    "accuracy": {
+     "point": 0.5322328390241675,
+     "ci95": [
+      0.5299266812790392,
+      0.5345335742091624
+     ]
+    },
+    "macro_f1": {
+     "point": 0.24319884992210813,
+     "ci95": [
+      0.2401335925526973,
+      0.24625869752662818
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.2576290167471701,
+     "ci95": [
+      0.25073598436800276,
+      0.26418838077317014
+     ]
+    }
+   },
+   "leaked_rows": {
+    "accuracy": {
+     "point": 0.533974739192631,
+     "ci95": [
+      0.5310553095013508,
+      0.5370006838743397
+     ]
+    },
+    "macro_f1": {
+     "point": 0.15581033240381373,
+     "ci95": [
+      0.15221861713233142,
+      0.15934858325842788
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.12958920404390917,
+     "ci95": [
+      0.1223309056984131,
+      0.13725300378804947
+     ]
+    }
+   }
+  },
+  "leaky_zero": {
+   "all": {
+    "accuracy": {
+     "point": 0.4097514755071521,
+     "ci95": [
+      0.40741107001381327,
+      0.41211514092948387
+     ]
+    },
+    "macro_f1": {
+     "point": 0.24470211921544507,
+     "ci95": [
+      0.24062195250297977,
+      0.24850958990049896
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.2479681682785458,
+     "ci95": [
+      0.240969206924933,
+      0.2538226589678179
+     ]
+    }
+   },
+   "leaked_rows": {
+    "accuracy": {
+     "point": 0.34680401939918354,
+     "ci95": [
+      0.3442112000701241,
+      0.34954835665633033
+     ]
+    },
+    "macro_f1": {
+     "point": 0.11123408655671299,
+     "ci95": [
+      0.10760169847977658,
+      0.11465746232468774
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.11731705712687314,
+     "ci95": [
+      0.11143763938357769,
+      0.12283090811234916
+     ]
+    }
+   }
+  },
+  "fixA": {
+   "all": {
+    "accuracy": {
+     "point": 0.5829480461659646,
+     "ci95": [
+      0.5806244791488293,
+      0.5851570259255454
+     ]
+    },
+    "macro_f1": {
+     "point": 0.27117039219360295,
+     "ci95": [
+      0.26704242138928325,
+      0.27511124786473157
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.25877029610647295,
+     "ci95": [
+      0.2511393796606059,
+      0.26557649835895747
+     ]
+    }
+   },
+   "leaked_rows": {
+    "accuracy": {
+     "point": 0.6111266180524058,
+     "ci95": [
+      0.6083984809467267,
+      0.6138595105941688
+     ]
+    },
+    "macro_f1": {
+     "point": 0.15518481735541023,
+     "ci95": [
+      0.15161613030496593,
+      0.158867058338686
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.10623471767415577,
+     "ci95": [
+      0.10034244908907233,
+      0.11238412313428567
+     ]
+    }
+   }
+  }
+ },
+ "diff": {
+  "leaky-leaky_plus8y": {
+   "all": {
+    "accuracy": {
+     "point": 0.05097777321141128,
+     "ci95": [
+      0.049790375241161255,
+      0.05204544676187539
+     ]
+    },
+    "macro_f1": {
+     "point": 0.02820931905431709,
+     "ci95": [
+      0.02562643595997863,
+      0.030719775520028643
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.0008168956831918761,
+     "ci95": [
+      -0.004539714058331348,
+      0.006351352258783688
+     ]
+    }
+   },
+   "leaked_rows": {
+    "accuracy": {
+     "point": 0.0779020271449008,
+     "ci95": [
+      0.07615908296089796,
+      0.07951661674363203
+     ]
+    },
+    "macro_f1": {
+     "point": -0.0012697769825191496,
+     "ci95": [
+      -0.004106006011685522,
+      0.0015585910971520967
+     ]
+    },
+    "mean_attack_recall": {
+     "point": -0.023567162703044583,
+     "ci95": [
+      -0.03154089784198014,
+      -0.015319638534276935
+     ]
+    }
+   }
+  },
+  "leaky-leaky_zero": {
+   "all": {
+    "accuracy": {
+     "point": 0.17345913672842672,
+     "ci95": [
+      0.17160904483030243,
+      0.17539427720127398
+     ]
+    },
+    "macro_f1": {
+     "point": 0.02670604976098015,
+     "ci95": [
+      0.024491583733856546,
+      0.02901975186154613
+     ]
+    },
+    "mean_attack_recall": {
+     "point": 0.010477744151816182,
+     "ci95": [
+      0.005441228137231516,
+      0.015816007451152095
+     ]
+    }
+   },
+   "leaked_rows": {
+    "accuracy": {
+     "point": 0.2650727469383483,
+     "ci95": [
+      0.26231045869972763,
+      0.2678398242435563
+     ]
+    },
+    "macro_f1": {
+     "point": 0.04330646886458159,
+     "ci95": [
+      0.04007413200682507,
+      0.046664147671303786
+     ]
+    },
+    "mean_attack_recall": {
+     "point": -0.011295015786008555,
+     "ci95": [
+      -0.01893636480783926,
+      -0.003723932839211841
+     ]
+    }
+   }
+  },
+  "leaky-fixA": {
+   "all": {
+    "accuracy": {
+     "point": 0.0002625660696141674,
+     "ci95": [
+      -7.434615340717598e-05,
+      0.0005937703346005073
+     ]
+    },
+    "macro_f1": {
+     "point": 0.00023777678282227432,
+     "ci95": [
+      -0.0008524279289776795,
+      0.0012378795092089594
+     ]
+    },
+    "mean_attack_recall": {
+     "point": -0.0003243836761109842,
+     "ci95": [
+      -0.002139250919936131,
+      0.001721907348639487
+     ]
+    }
+   },
+   "leaked_rows": {
+    "accuracy": {
+     "point": 0.0007501482851260954,
+     "ci95": [
+      0.0005233636120786534,
+      0.0009682742029100688
+     ]
+    },
+    "macro_f1": {
+     "point": -0.000644261934115653,
+     "ci95": [
+      -0.001469872181558897,
+      2.2642613155442677e-05
+     ]
+    },
+    "mean_attack_recall": {
+     "point": -0.0002126763332911813,
+     "ci95": [
+      -0.001503910306246478,
+      0.0009466128162087177
+     ]
+    }
+   }
+  }
+ }
+}

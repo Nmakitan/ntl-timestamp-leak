@@ -1,0 +1,16 @@
+,lone SYN,lone SYN-ACK,lone RST,lone FIN,"lone ACK, no payload (ghost ACK)",lone data packet,lone other,SYN -> RST pair (probe/refused),SYN -> SYN-ACK pair,FIN/RST teardown pair,1+1 with payload,1+1 other,multi-packet with payload (session),"repeated SYNs, no payload","multi-packet, no payload",not leaked
+Benign,78,6,117449,7011,275784,316,0,4547,23,9545,172193,12898,8961,1037,17495,1158896
+Botnet_ARES,0,0,0,0,705,0,0,3906,0,0,0,0,0,2,0,895
+DDoS_LOIT,0,0,49,0,0,0,0,0,0,0,0,0,1,0,0,95683
+DoS_GoldenEye,0,0,515,0,6,0,0,0,0,0,0,1,0,1,0,7841
+DoS_Hulk,0,0,127983,0,0,0,0,0,1,2858,1217,0,48,32,7,217094
+DoS_Slowhttptest,0,0,1770,1,11,0,0,0,0,0,1,0,198,0,0,4879
+DoS_Slowloris,25,0,981,0,10,0,0,0,0,1,0,0,0,0,0,4160
+FTP-Patator,0,0,3027,47,10,0,0,0,0,2408,30,0,5,0,0,4004
+Heartbleed,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,8
+Port_Scan,955,0,828,0,128,2,265,157969,0,0,1,0,0,961,0,214
+SSH-Patator,0,0,4,0,2933,0,0,0,0,12,0,3,0,0,3,2994
+Web_Brute_Force,0,0,1,0,1365,0,0,0,0,0,0,0,0,0,0,1368
+Web_SQL_Injection,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,13
+Web_XSS,0,0,1,0,678,0,0,0,0,0,0,0,0,0,0,679
+ALL,1058,6,252612,7059,281641,318,265,166422,24,14824,173442,12902,9213,2033,17505,1498728

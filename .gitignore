@@ -1,0 +1,17 @@
+# virtualenvs / caches
+venv/
+venv_*/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# large regenerable binary artifacts (see EXTERNAL_DATA.md)
+*.npy
+*.npz
+# raw third-party captures (CIC-IDS2018, not redistributable here)
+UCAP*.pcap
+cic2018_sqli_port59823.pcap
+
+# scratch
+*.tmp
+*.swp

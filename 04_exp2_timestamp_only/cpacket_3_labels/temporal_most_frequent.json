@@ -1,0 +1,87 @@
+{
+ "dataset": "BCCC-cPacket-Cloud-DDoS-2024",
+ "class_mode": "label",
+ "split": "temporal",
+ "model": "most_frequent",
+ "n_train": 525580,
+ "n_test": 175194,
+ "seconds": 0.03,
+ "all": {
+  "n": 175194,
+  "accuracy": 0.5896377729830931,
+  "macro_f1": 0.2472839129367972,
+  "per_class": {
+   "Attack": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 57117
+   },
+   "Benign": {
+    "precision": 0.5896377729830931,
+    "recall": 1.0,
+    "support": 103301
+   },
+   "Suspicious": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 14776
+   }
+  },
+  "confusion": [
+   [
+    0,
+    57117,
+    0
+   ],
+   [
+    0,
+    103301,
+    0
+   ],
+   [
+    0,
+    14776,
+    0
+   ]
+  ]
+ },
+ "leaked_rows": {
+  "n": 91828,
+  "accuracy": 0.8082284270592848,
+  "macro_f1": 0.2979816837904356,
+  "per_class": {
+   "Attack": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 13716
+   },
+   "Benign": {
+    "precision": 0.8082284270592848,
+    "recall": 1.0,
+    "support": 74218
+   },
+   "Suspicious": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "support": 3894
+   }
+  },
+  "confusion": [
+   [
+    0,
+    13716,
+    0
+   ],
+   [
+    0,
+    74218,
+    0
+   ],
+   [
+    0,
+    3894,
+    0
+   ]
+  ]
+ }
+}

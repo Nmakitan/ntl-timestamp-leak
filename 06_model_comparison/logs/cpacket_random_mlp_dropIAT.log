@@ -1,0 +1,1 @@
+cpacket random mlp dropIAT: dropIAT acc=0.8220 leaked=0.8804 | fit 126s, warnings 0

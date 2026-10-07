@@ -1,0 +1,25 @@
+d2018 random dt: 5 conditions, 122 tuples
+d2018 random mlp: 5 conditions, 69 tuples
+d2018 random rf: 5 conditions, 102 tuples
+d2018 random xgb: 5 conditions, 79 tuples
+d2018 temporal dt: 5 conditions, 128 tuples
+d2018 temporal mlp: 5 conditions, 58 tuples
+d2018 temporal rf: 5 conditions, 68 tuples
+d2018 temporal xgb: 5 conditions, 76 tuples
+d2017 random dt: 5 conditions, 532 tuples
+d2017 random mlp: 5 conditions, 214 tuples
+d2017 random rf: 5 conditions, 300 tuples
+d2017 random xgb: 5 conditions, 281 tuples
+d2017 temporal dt: 5 conditions, 485 tuples
+d2017 temporal mlp: 5 conditions, 233 tuples
+d2017 temporal rf: 5 conditions, 267 tuples
+d2017 temporal xgb: 5 conditions, 271 tuples
+cpacket random dt: 5 conditions, 11184 tuples
+cpacket random mlp: 5 conditions, 1740 tuples
+cpacket random rf: 5 conditions, 6095 tuples
+cpacket random xgb: 5 conditions, 8716 tuples
+cpacket temporal dt: 5 conditions, 7687 tuples
+cpacket temporal mlp: 5 conditions, 1772 tuples
+cpacket temporal rf: 5 conditions, 5276 tuples
+cpacket temporal xgb: 5 conditions, 7061 tuples
+2052 rows -> /home/nik/Desktop/ntl_models/results/BOOTSTRAP_CI.csv
